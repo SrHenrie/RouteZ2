@@ -27,6 +27,8 @@
 		CCCAD39D1B6FD42700161ACD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD39C1B6FD42700161ACD /* MapKit.framework */; };
 		CCCAD3A01B6FD64D00161ACD /* MapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD39F1B6FD64D00161ACD /* MapViewViewController.m */; };
 		CCCAD3A31B6FD66600161ACD /* MapDelagate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3A21B6FD66600161ACD /* MapDelagate.m */; };
+		CCCAD3A61B6FF40600161ACD /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3A51B6FF40600161ACD /* SettingsViewController.m */; };
+		CCCAD3A91B6FF42600161ACD /* SettingsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3A81B6FF42600161ACD /* SettingsDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,10 @@
 		CCCAD39F1B6FD64D00161ACD /* MapViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewViewController.m; path = ../MapViewViewController.m; sourceTree = "<group>"; };
 		CCCAD3A11B6FD66600161ACD /* MapDelagate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapDelagate.h; path = ../MapDelagate.h; sourceTree = "<group>"; };
 		CCCAD3A21B6FD66600161ACD /* MapDelagate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapDelagate.m; path = ../MapDelagate.m; sourceTree = "<group>"; };
+		CCCAD3A41B6FF40600161ACD /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		CCCAD3A51B6FF40600161ACD /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		CCCAD3A71B6FF42600161ACD /* SettingsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsDataSource.h; sourceTree = "<group>"; };
+		CCCAD3A81B6FF42600161ACD /* SettingsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,10 @@
 				CC636B4C1B6C800B00293C45 /* ViewController.h */,
 				CC636B4D1B6C800B00293C45 /* ViewController.m */,
 				CC636B4F1B6C800B00293C45 /* Main.storyboard */,
+				CCCAD3A41B6FF40600161ACD /* SettingsViewController.h */,
+				CCCAD3A51B6FF40600161ACD /* SettingsViewController.m */,
+				CCCAD3A71B6FF42600161ACD /* SettingsDataSource.h */,
+				CCCAD3A81B6FF42600161ACD /* SettingsDataSource.m */,
 				CCCAD39E1B6FD64D00161ACD /* MapViewViewController.h */,
 				CCCAD39F1B6FD64D00161ACD /* MapViewViewController.m */,
 				CCCAD3A11B6FD66600161ACD /* MapDelagate.h */,
@@ -289,6 +299,7 @@
 				CCCAD3601B6F1CC500161ACD /* CustomerSelectedViewController.m in Sources */,
 				CC8DF23E1B6D101C00A90BD7 /* CustomerDataSource.m in Sources */,
 				CC8DF23B1B6D01E500A90BD7 /* TodaysRouteDataSource.m in Sources */,
+				CCCAD3A61B6FF40600161ACD /* SettingsViewController.m in Sources */,
 				CC636B481B6C800B00293C45 /* AppDelegate.m in Sources */,
 				CC8DF2351B6C970800A90BD7 /* TodaysRouteCellTableViewCell.m in Sources */,
 				CC8DF2411B6D103E00A90BD7 /* CustomerViewController.m in Sources */,
@@ -301,6 +312,7 @@
 				CC636B4B1B6C800B00293C45 /* RouteZ2.xcdatamodeld in Sources */,
 				CCCAD3A31B6FD66600161ACD /* MapDelagate.m in Sources */,
 				CC8DF2441B6D106600A90BD7 /* CustomerTableViewCell.m in Sources */,
+				CCCAD3A91B6FF42600161ACD /* SettingsDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

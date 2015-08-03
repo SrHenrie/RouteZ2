@@ -12,13 +12,38 @@
 
 @end
 
+
+//house coordinates
+#define HOUSE_LATITUDE 40.229025;
+#define HOUSE_LONGITUDE -111.674799;
+
+#define THE_SPAN 0.30f;
 @implementation MapViewViewController
 
 @synthesize mapView = _mapView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+//create region
+    MKCoordinateRegion myRegion;
+    
+    //center
+    CLLocationCoordinate2D center;
+    center.latitude = HOUSE_LATITUDE;
+    center.longitude = HOUSE_LONGITUDE;
+    
+    //span
+    MKCoordinateSpan span;
+    span.latitudeDelta = THE_SPAN;
+    span.longitudeDelta = THE_SPAN;
+    
+    myRegion.center = center;
+    myRegion.span = span;
+    
+    //set our mapView
+    [mapView setRegion:myRegion animated: YES];
+
 }
 
 - (void)didReceiveMemoryWarning {
