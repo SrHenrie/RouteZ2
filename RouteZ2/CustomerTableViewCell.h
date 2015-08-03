@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomerTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *customerNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *customerAddressLabel;
 
 @end

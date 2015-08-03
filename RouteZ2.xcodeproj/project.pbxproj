@@ -22,6 +22,8 @@
 		CC8DF23E1B6D101C00A90BD7 /* CustomerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8DF23D1B6D101C00A90BD7 /* CustomerDataSource.m */; };
 		CC8DF2411B6D103E00A90BD7 /* CustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8DF2401B6D103E00A90BD7 /* CustomerViewController.m */; };
 		CC8DF2441B6D106600A90BD7 /* CustomerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8DF2431B6D106600A90BD7 /* CustomerTableViewCell.m */; };
+		CCCAD35D1B6F1C8A00161ACD /* AddCustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD35C1B6F1C8A00161ACD /* AddCustomerViewController.m */; };
+		CCCAD3601B6F1CC500161ACD /* CustomerSelectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD35F1B6F1CC500161ACD /* CustomerSelectedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		CC8DF2401B6D103E00A90BD7 /* CustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerViewController.m; sourceTree = "<group>"; };
 		CC8DF2421B6D106600A90BD7 /* CustomerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerTableViewCell.h; sourceTree = "<group>"; };
 		CC8DF2431B6D106600A90BD7 /* CustomerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerTableViewCell.m; sourceTree = "<group>"; };
+		CCCAD35B1B6F1C8A00161ACD /* AddCustomerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerViewController.h; sourceTree = "<group>"; };
+		CCCAD35C1B6F1C8A00161ACD /* AddCustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerViewController.m; sourceTree = "<group>"; };
+		CCCAD35E1B6F1CC500161ACD /* CustomerSelectedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerSelectedViewController.h; sourceTree = "<group>"; };
+		CCCAD35F1B6F1CC500161ACD /* CustomerSelectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerSelectedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,8 @@
 				CC636B4C1B6C800B00293C45 /* ViewController.h */,
 				CC636B4D1B6C800B00293C45 /* ViewController.m */,
 				CC636B4F1B6C800B00293C45 /* Main.storyboard */,
+				CCCAD35E1B6F1CC500161ACD /* CustomerSelectedViewController.h */,
+				CCCAD35F1B6F1CC500161ACD /* CustomerSelectedViewController.m */,
 				CC8DF23C1B6D101C00A90BD7 /* CustomerDataSource.h */,
 				CC8DF23D1B6D101C00A90BD7 /* CustomerDataSource.m */,
 				CC8DF23F1B6D103E00A90BD7 /* CustomerViewController.h */,
@@ -119,6 +127,8 @@
 				CC8DF2431B6D106600A90BD7 /* CustomerTableViewCell.m */,
 				CC8DF2361B6C977E00A90BD7 /* TodaysRouteViewController.h */,
 				CC8DF2371B6C977E00A90BD7 /* TodaysRouteViewController.m */,
+				CCCAD35B1B6F1C8A00161ACD /* AddCustomerViewController.h */,
+				CCCAD35C1B6F1C8A00161ACD /* AddCustomerViewController.m */,
 				CC8DF2391B6D01E500A90BD7 /* TodaysRouteDataSource.h */,
 				CC8DF23A1B6D01E500A90BD7 /* TodaysRouteDataSource.m */,
 				CC8DF2331B6C970800A90BD7 /* TodaysRouteCellTableViewCell.h */,
@@ -257,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCCAD3601B6F1CC500161ACD /* CustomerSelectedViewController.m in Sources */,
 				CC8DF23E1B6D101C00A90BD7 /* CustomerDataSource.m in Sources */,
 				CC8DF23B1B6D01E500A90BD7 /* TodaysRouteDataSource.m in Sources */,
 				CC636B481B6C800B00293C45 /* AppDelegate.m in Sources */,
@@ -265,6 +276,7 @@
 				CC636B451B6C800B00293C45 /* main.m in Sources */,
 				CC636B4E1B6C800B00293C45 /* ViewController.m in Sources */,
 				CC636B6D1B6C87B500293C45 /* MainViewController.m in Sources */,
+				CCCAD35D1B6F1C8A00161ACD /* AddCustomerViewController.m in Sources */,
 				CC8DF2381B6C977E00A90BD7 /* TodaysRouteViewController.m in Sources */,
 				CC636B4B1B6C800B00293C45 /* RouteZ2.xcdatamodeld in Sources */,
 				CC8DF2441B6D106600A90BD7 /* CustomerTableViewCell.m in Sources */,
