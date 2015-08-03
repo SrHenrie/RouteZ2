@@ -20,4 +20,9 @@
     // Configure the view for the selected state
 }
 
+- (IBAction)moreButton:(id)sender {
+    
+    NSLog(@"button was pressed");
+}
+
 @end
