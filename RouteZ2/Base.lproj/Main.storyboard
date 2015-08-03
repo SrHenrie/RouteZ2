@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8Xb-v0-2jw">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -122,7 +123,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v9g-vI-fVM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="JJg-Xs-eCP" customClass="TodaysRouteDataSource"/>
             </objects>
-            <point key="canvasLocation" x="-1741" y="3071"/>
+            <point key="canvasLocation" x="-2949" y="3231"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yuh-CQ-omP">
@@ -140,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PwT-C1-ej6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1745" y="3737"/>
+            <point key="canvasLocation" x="-2949" y="3929"/>
         </scene>
         <!--Customer-->
         <scene sceneID="t88-Fm-5nF">
@@ -164,19 +165,31 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yzW-w2-2Y0" id="azq-lx-nMn">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name, First Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWY-KV-7cT">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Last Name, First Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWY-KV-7cT">
                                                     <rect key="frame" x="35" y="18" width="176" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yU8-19-0Dj">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yU8-19-0Dj">
                                                     <rect key="frame" x="279" y="18" width="64" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="64" id="OTg-y7-4zR"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yU8-19-0Dj" firstAttribute="leading" secondItem="azq-lx-nMn" secondAttribute="leading" constant="279" id="28s-nP-3aG"/>
+                                                <constraint firstItem="ZWY-KV-7cT" firstAttribute="leading" secondItem="azq-lx-nMn" secondAttribute="leadingMargin" constant="20" id="3Kb-Pq-hWj"/>
+                                                <constraint firstItem="yU8-19-0Dj" firstAttribute="leading" secondItem="ZWY-KV-7cT" secondAttribute="trailing" constant="68" id="Au0-GR-CmS"/>
+                                                <constraint firstItem="ZWY-KV-7cT" firstAttribute="top" secondItem="azq-lx-nMn" secondAttribute="topMargin" constant="10" id="HWx-to-FEB"/>
+                                                <constraint firstItem="yU8-19-0Dj" firstAttribute="baseline" secondItem="ZWY-KV-7cT" secondAttribute="baseline" id="YB5-hI-wOf"/>
+                                                <constraint firstItem="yU8-19-0Dj" firstAttribute="firstBaseline" secondItem="ZWY-KV-7cT" secondAttribute="firstBaseline" id="wkj-ED-pl1"/>
+                                                <constraint firstItem="ZWY-KV-7cT" firstAttribute="centerY" secondItem="azq-lx-nMn" secondAttribute="centerY" id="z0n-lH-Cag"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="customerAddressLabel" destination="yU8-19-0Dj" id="Z8O-QL-XsL"/>
@@ -211,7 +224,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3d6-5z-5BX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="CUy-rT-vbk" customClass="CustomerDataSource"/>
             </objects>
-            <point key="canvasLocation" x="-1067" y="2519"/>
+            <point key="canvasLocation" x="-2187" y="2448"/>
         </scene>
         <!--Add Customer View Controller-->
         <scene sceneID="ISK-HB-yeX">
@@ -235,7 +248,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSA-xC-5et" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-179" y="3265"/>
+            <point key="canvasLocation" x="-1507" y="3161"/>
         </scene>
         <!--Customer Selected View Controller-->
         <scene sceneID="Ar2-iA-BTm">
@@ -259,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4IF-sE-lTS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1077" y="3314"/>
+            <point key="canvasLocation" x="-2187" y="3146"/>
         </scene>
         <!--Calendar-->
         <scene sceneID="UE8-Ib-Xyk">
@@ -278,7 +291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Elb-gE-830" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-201" y="2527"/>
+            <point key="canvasLocation" x="-1433" y="2439"/>
         </scene>
         <!--Settings-->
         <scene sceneID="obl-rk-l9Q">
@@ -383,12 +396,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6b7-ND-50A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31" y="1543"/>
+            <point key="canvasLocation" x="7" y="2439"/>
         </scene>
         <!--Map-->
         <scene sceneID="1Ji-dL-Ysk">
             <objects>
-                <viewController id="Pe1-44-Rsx" sceneMemberID="viewController">
+                <viewController id="Pe1-44-Rsx" customClass="MapViewViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xpw-94-kbx"/>
                         <viewControllerLayoutGuide type="bottom" id="LAa-hN-Uct"/>
@@ -396,13 +409,50 @@
                     <view key="view" contentMode="scaleToFill" id="xGe-rA-6rF">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aPn-3K-yio">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFz-oq-HP9">
+                                <rect key="frame" x="-2" y="499" width="605" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="2Rx-H3-Y2p">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="t5A-fa-xTW">
+                                            <rect key="frame" x="16" y="7" width="349" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Standard"/>
+                                                <segment title="Hybrid"/>
+                                                <segment title="Satellite"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="setMap:" destination="Pe1-44-Rsx" eventType="valueChanged" id="keX-w1-IRL"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LFz-oq-HP9" firstAttribute="leading" secondItem="xGe-rA-6rF" secondAttribute="leadingMargin" constant="-18" id="2iK-a6-FIv"/>
+                            <constraint firstItem="aPn-3K-yio" firstAttribute="leading" secondItem="xGe-rA-6rF" secondAttribute="leading" id="4sG-wf-Xde"/>
+                            <constraint firstItem="LAa-hN-Uct" firstAttribute="top" secondItem="LFz-oq-HP9" secondAttribute="bottom" constant="8" id="Hvy-PX-8cH"/>
+                            <constraint firstAttribute="bottom" secondItem="aPn-3K-yio" secondAttribute="bottom" id="TxI-27-Xva"/>
+                            <constraint firstAttribute="trailing" secondItem="aPn-3K-yio" secondAttribute="trailing" id="Wg4-vP-xcE"/>
+                            <constraint firstItem="LFz-oq-HP9" firstAttribute="centerX" secondItem="aPn-3K-yio" secondAttribute="centerX" id="fn2-9d-vDo"/>
+                            <constraint firstItem="aPn-3K-yio" firstAttribute="top" secondItem="xGe-rA-6rF" secondAttribute="top" id="sBp-xR-VVm"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="57y-56-U2S"/>
+                    <connections>
+                        <outlet property="mapView" destination="aPn-3K-yio" id="dg9-Hr-vzc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xGY-Qc-5kV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="gZW-i1-KFE" customClass="MapDelagate"/>
             </objects>
-            <point key="canvasLocation" x="863" y="2311"/>
+            <point key="canvasLocation" x="-721" y="2448"/>
         </scene>
         <!--Today's Route-->
         <scene sceneID="sX9-cn-ave">
@@ -443,7 +493,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDb-yi-NRZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1741" y="2344"/>
+            <point key="canvasLocation" x="-2957" y="2439"/>
         </scene>
     </scenes>
 </document>

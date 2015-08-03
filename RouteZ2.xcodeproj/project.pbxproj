@@ -24,6 +24,9 @@
 		CC8DF2441B6D106600A90BD7 /* CustomerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8DF2431B6D106600A90BD7 /* CustomerTableViewCell.m */; };
 		CCCAD35D1B6F1C8A00161ACD /* AddCustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD35C1B6F1C8A00161ACD /* AddCustomerViewController.m */; };
 		CCCAD3601B6F1CC500161ACD /* CustomerSelectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD35F1B6F1CC500161ACD /* CustomerSelectedViewController.m */; };
+		CCCAD39D1B6FD42700161ACD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD39C1B6FD42700161ACD /* MapKit.framework */; };
+		CCCAD3A01B6FD64D00161ACD /* MapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD39F1B6FD64D00161ACD /* MapViewViewController.m */; };
+		CCCAD3A31B6FD66600161ACD /* MapDelagate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3A21B6FD66600161ACD /* MapDelagate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,11 @@
 		CCCAD35C1B6F1C8A00161ACD /* AddCustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerViewController.m; sourceTree = "<group>"; };
 		CCCAD35E1B6F1CC500161ACD /* CustomerSelectedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerSelectedViewController.h; sourceTree = "<group>"; };
 		CCCAD35F1B6F1CC500161ACD /* CustomerSelectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerSelectedViewController.m; sourceTree = "<group>"; };
+		CCCAD39C1B6FD42700161ACD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CCCAD39E1B6FD64D00161ACD /* MapViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewViewController.h; path = ../MapViewViewController.h; sourceTree = "<group>"; };
+		CCCAD39F1B6FD64D00161ACD /* MapViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewViewController.m; path = ../MapViewViewController.m; sourceTree = "<group>"; };
+		CCCAD3A11B6FD66600161ACD /* MapDelagate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapDelagate.h; path = ../MapDelagate.h; sourceTree = "<group>"; };
+		CCCAD3A21B6FD66600161ACD /* MapDelagate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapDelagate.m; path = ../MapDelagate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCCAD39D1B6FD42700161ACD /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +101,7 @@
 		CC636B361B6C800B00293C45 = {
 			isa = PBXGroup;
 			children = (
+				CCCAD39C1B6FD42700161ACD /* MapKit.framework */,
 				CC636B411B6C800B00293C45 /* RouteZ2 */,
 				CC636B5E1B6C800B00293C45 /* RouteZ2Tests */,
 				CC636B401B6C800B00293C45 /* Products */,
@@ -117,6 +127,10 @@
 				CC636B4C1B6C800B00293C45 /* ViewController.h */,
 				CC636B4D1B6C800B00293C45 /* ViewController.m */,
 				CC636B4F1B6C800B00293C45 /* Main.storyboard */,
+				CCCAD39E1B6FD64D00161ACD /* MapViewViewController.h */,
+				CCCAD39F1B6FD64D00161ACD /* MapViewViewController.m */,
+				CCCAD3A11B6FD66600161ACD /* MapDelagate.h */,
+				CCCAD3A21B6FD66600161ACD /* MapDelagate.m */,
 				CCCAD35E1B6F1CC500161ACD /* CustomerSelectedViewController.h */,
 				CCCAD35F1B6F1CC500161ACD /* CustomerSelectedViewController.m */,
 				CC8DF23C1B6D101C00A90BD7 /* CustomerDataSource.h */,
@@ -216,6 +230,11 @@
 				TargetAttributes = {
 					CC636B3E1B6C800B00293C45 = {
 						CreatedOnToolsVersion = 6.3.2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					CC636B5A1B6C800B00293C45 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -277,8 +296,10 @@
 				CC636B4E1B6C800B00293C45 /* ViewController.m in Sources */,
 				CC636B6D1B6C87B500293C45 /* MainViewController.m in Sources */,
 				CCCAD35D1B6F1C8A00161ACD /* AddCustomerViewController.m in Sources */,
+				CCCAD3A01B6FD64D00161ACD /* MapViewViewController.m in Sources */,
 				CC8DF2381B6C977E00A90BD7 /* TodaysRouteViewController.m in Sources */,
 				CC636B4B1B6C800B00293C45 /* RouteZ2.xcdatamodeld in Sources */,
+				CCCAD3A31B6FD66600161ACD /* MapDelagate.m in Sources */,
 				CC8DF2441B6D106600A90BD7 /* CustomerTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
