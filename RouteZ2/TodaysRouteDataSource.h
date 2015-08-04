@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 @import UIKit;
 
-@interface TodaysRouteDataSource : NSObject <UITableViewDataSource>
+@interface TodaysRouteDataSource : NSObject <UITableViewDataSource, UITableViewDelegate>
 
 
 

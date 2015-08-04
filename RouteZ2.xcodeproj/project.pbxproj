@@ -29,6 +29,8 @@
 		CCCAD3A61B6FF40600161ACD /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3A51B6FF40600161ACD /* SettingsViewController.m */; };
 		CCCAD3A91B6FF42600161ACD /* SettingsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3A81B6FF42600161ACD /* SettingsDataSource.m */; };
 		CCCAD3E81B703EF500161ACD /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3E71B703EF500161ACD /* CalendarViewController.m */; };
+		CCCAD3EA1B707E9400161ACD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD3E91B707E9400161ACD /* CoreLocation.framework */; };
+		CCCAD3F01B717F5100161ACD /* AddCustomerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3EF1B717F5100161ACD /* AddCustomerDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,8 +83,11 @@
 		CCCAD3A51B6FF40600161ACD /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		CCCAD3A71B6FF42600161ACD /* SettingsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsDataSource.h; sourceTree = "<group>"; };
 		CCCAD3A81B6FF42600161ACD /* SettingsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsDataSource.m; sourceTree = "<group>"; };
-		CCCAD3E61B703EF500161ACD /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
-		CCCAD3E71B703EF500161ACD /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		CCCAD3E61B703EF500161ACD /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarViewController.h; path = ../CalendarViewController.h; sourceTree = "<group>"; };
+		CCCAD3E71B703EF500161ACD /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarViewController.m; path = ../CalendarViewController.m; sourceTree = "<group>"; };
+		CCCAD3E91B707E9400161ACD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CCCAD3EE1B717F5100161ACD /* AddCustomerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddCustomerDataSource.h; path = ../AddCustomerDataSource.h; sourceTree = "<group>"; };
+		CCCAD3EF1B717F5100161ACD /* AddCustomerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddCustomerDataSource.m; path = ../AddCustomerDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCCAD3EA1B707E9400161ACD /* CoreLocation.framework in Frameworks */,
 				CCCAD39D1B6FD42700161ACD /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,8 +113,7 @@
 		CC636B361B6C800B00293C45 = {
 			isa = PBXGroup;
 			children = (
-				CCCAD3E61B703EF500161ACD /* CalendarViewController.h */,
-				CCCAD3E71B703EF500161ACD /* CalendarViewController.m */,
+				CCCAD3E91B707E9400161ACD /* CoreLocation.framework */,
 				CCCAD39C1B6FD42700161ACD /* MapKit.framework */,
 				CC636B411B6C800B00293C45 /* RouteZ2 */,
 				CC636B5E1B6C800B00293C45 /* RouteZ2Tests */,
@@ -128,19 +133,21 @@
 		CC636B411B6C800B00293C45 /* RouteZ2 */ = {
 			isa = PBXGroup;
 			children = (
+				CC636B4F1B6C800B00293C45 /* Main.storyboard */,
 				CC636B461B6C800B00293C45 /* AppDelegate.h */,
 				CC636B471B6C800B00293C45 /* AppDelegate.m */,
 				CC636B6B1B6C87B500293C45 /* MainViewController.h */,
 				CC636B6C1B6C87B500293C45 /* MainViewController.m */,
 				CC636B4C1B6C800B00293C45 /* ViewController.h */,
 				CC636B4D1B6C800B00293C45 /* ViewController.m */,
-				CC636B4F1B6C800B00293C45 /* Main.storyboard */,
 				CCCAD3A41B6FF40600161ACD /* SettingsViewController.h */,
 				CCCAD3A51B6FF40600161ACD /* SettingsViewController.m */,
 				CCCAD3A71B6FF42600161ACD /* SettingsDataSource.h */,
 				CCCAD3A81B6FF42600161ACD /* SettingsDataSource.m */,
 				CCCAD39E1B6FD64D00161ACD /* MapViewViewController.h */,
 				CCCAD39F1B6FD64D00161ACD /* MapViewViewController.m */,
+				CCCAD3E61B703EF500161ACD /* CalendarViewController.h */,
+				CCCAD3E71B703EF500161ACD /* CalendarViewController.m */,
 				CCCAD35E1B6F1CC500161ACD /* CustomerSelectedViewController.h */,
 				CCCAD35F1B6F1CC500161ACD /* CustomerSelectedViewController.m */,
 				CC8DF23C1B6D101C00A90BD7 /* CustomerDataSource.h */,
@@ -149,10 +156,12 @@
 				CC8DF2401B6D103E00A90BD7 /* CustomerViewController.m */,
 				CC8DF2421B6D106600A90BD7 /* CustomerTableViewCell.h */,
 				CC8DF2431B6D106600A90BD7 /* CustomerTableViewCell.m */,
-				CC8DF2361B6C977E00A90BD7 /* TodaysRouteViewController.h */,
-				CC8DF2371B6C977E00A90BD7 /* TodaysRouteViewController.m */,
 				CCCAD35B1B6F1C8A00161ACD /* AddCustomerViewController.h */,
 				CCCAD35C1B6F1C8A00161ACD /* AddCustomerViewController.m */,
+				CCCAD3EE1B717F5100161ACD /* AddCustomerDataSource.h */,
+				CCCAD3EF1B717F5100161ACD /* AddCustomerDataSource.m */,
+				CC8DF2361B6C977E00A90BD7 /* TodaysRouteViewController.h */,
+				CC8DF2371B6C977E00A90BD7 /* TodaysRouteViewController.m */,
 				CC8DF2391B6D01E500A90BD7 /* TodaysRouteDataSource.h */,
 				CC8DF23A1B6D01E500A90BD7 /* TodaysRouteDataSource.m */,
 				CC8DF2331B6C970800A90BD7 /* TodaysRouteCellTableViewCell.h */,
@@ -312,6 +321,7 @@
 				CC8DF2381B6C977E00A90BD7 /* TodaysRouteViewController.m in Sources */,
 				CC636B4B1B6C800B00293C45 /* RouteZ2.xcdatamodeld in Sources */,
 				CC8DF2441B6D106600A90BD7 /* CustomerTableViewCell.m in Sources */,
+				CCCAD3F01B717F5100161ACD /* AddCustomerDataSource.m in Sources */,
 				CCCAD3A91B6FF42600161ACD /* SettingsDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,8 +7,11 @@
 //
 
 #import "CustomerViewController.h"
+#import "CustomerTableViewCell.h"
+
 
 @interface CustomerViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *customerTableView;
 
 @end
 
@@ -17,6 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+- (IBAction)addButtonClicked:(id)sender {
+    
+    NSLog(@"button clicked");
+    
 }
 
 - (void)didReceiveMemoryWarning {

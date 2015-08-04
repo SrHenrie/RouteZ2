@@ -7,7 +7,23 @@
 //
 
 #import "CustomerDataSource.h"
+#import "CustomerTableViewCell.h"
+#import "CustomerViewController.h"
 
 @implementation CustomerDataSource
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 300;
+    
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"customerTableViewCell"];
+    return cell;
+    
+}
 
 @end
