@@ -42,6 +42,7 @@
     myRegion.span = span;
     
     //set our mapView
+    
     [mapView setRegion:myRegion animated: YES];
 
 }

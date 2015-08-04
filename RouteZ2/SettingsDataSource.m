@@ -7,7 +7,23 @@
 //
 
 #import "SettingsDataSource.h"
+#import "SettingsViewController.h"
 
 @implementation SettingsDataSource
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+  
+    return 1;
+    
+}
+
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableView *cell = [tableView dequeueReusableCellWithIdentifier:@"settingsCell"];
+    
+    return cell;
+    
+}
 @end

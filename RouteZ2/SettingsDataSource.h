@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 
-@interface SettingsDataSource : NSObject
+@interface SettingsDataSource : NSObject <UITableViewDataSource, UITableViewDelegate>
 
 @end
