@@ -216,7 +216,7 @@
                                 </state>
                                 <connections>
                                     <action selector="addButtonClicked:" destination="Le7-AG-0CZ" eventType="touchUpInside" id="Pc5-PQ-7nL"/>
-                                    <segue destination="GTD-Y9-5kT" kind="show" id="7Wh-YW-LHM"/>
+                                    <segue destination="GTD-Y9-5kT" kind="show" id="vSo-pw-E8h"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -246,8 +246,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addCustomerCell" id="VdJ-LQ-BaW" customClass="AddCustomerTableViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VdJ-LQ-BaW" id="osR-l4-DPq">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="GTD-Y9-5kT" id="O4H-LS-YJ2"/>
+                                    <outlet property="dataSource" destination="y4I-Xv-gJb" id="KnL-Cl-C4c"/>
                                     <outlet property="delegate" destination="GTD-Y9-5kT" id="f17-ln-pzQ"/>
                                 </connections>
                             </tableView>
@@ -256,8 +265,9 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSA-xC-5et" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="y4I-Xv-gJb" customClass="AddCustomerDataSource"/>
             </objects>
-            <point key="canvasLocation" x="-1517" y="3452"/>
+            <point key="canvasLocation" x="-1364" y="3398"/>
         </scene>
         <!--Customer Selected View Controller-->
         <scene sceneID="Ar2-iA-BTm">

@@ -31,6 +31,7 @@
 		CCCAD3E81B703EF500161ACD /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3E71B703EF500161ACD /* CalendarViewController.m */; };
 		CCCAD3EA1B707E9400161ACD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD3E91B707E9400161ACD /* CoreLocation.framework */; };
 		CCCAD3F01B717F5100161ACD /* AddCustomerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3EF1B717F5100161ACD /* AddCustomerDataSource.m */; };
+		CCCAD42F1B72CB5400161ACD /* AddCustomerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD42E1B72CB5400161ACD /* AddCustomerTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		CCCAD3E91B707E9400161ACD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CCCAD3EE1B717F5100161ACD /* AddCustomerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddCustomerDataSource.h; path = ../AddCustomerDataSource.h; sourceTree = "<group>"; };
 		CCCAD3EF1B717F5100161ACD /* AddCustomerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddCustomerDataSource.m; path = ../AddCustomerDataSource.m; sourceTree = "<group>"; };
+		CCCAD42D1B72CB5400161ACD /* AddCustomerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerTableViewCell.h; sourceTree = "<group>"; };
+		CCCAD42E1B72CB5400161ACD /* AddCustomerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 				CCCAD35C1B6F1C8A00161ACD /* AddCustomerViewController.m */,
 				CCCAD3EE1B717F5100161ACD /* AddCustomerDataSource.h */,
 				CCCAD3EF1B717F5100161ACD /* AddCustomerDataSource.m */,
+				CCCAD42D1B72CB5400161ACD /* AddCustomerTableViewCell.h */,
+				CCCAD42E1B72CB5400161ACD /* AddCustomerTableViewCell.m */,
 				CC8DF2361B6C977E00A90BD7 /* TodaysRouteViewController.h */,
 				CC8DF2371B6C977E00A90BD7 /* TodaysRouteViewController.m */,
 				CC8DF2391B6D01E500A90BD7 /* TodaysRouteDataSource.h */,
@@ -311,6 +316,7 @@
 				CCCAD3A61B6FF40600161ACD /* SettingsViewController.m in Sources */,
 				CC636B481B6C800B00293C45 /* AppDelegate.m in Sources */,
 				CC8DF2351B6C970800A90BD7 /* TodaysRouteCellTableViewCell.m in Sources */,
+				CCCAD42F1B72CB5400161ACD /* AddCustomerTableViewCell.m in Sources */,
 				CC8DF2411B6D103E00A90BD7 /* CustomerViewController.m in Sources */,
 				CC636B451B6C800B00293C45 /* main.m in Sources */,
 				CC636B4E1B6C800B00293C45 /* ViewController.m in Sources */,

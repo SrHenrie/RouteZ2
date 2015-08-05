@@ -8,7 +8,7 @@
 
 #import "AddCustomerDataSource.h"
 #import "AddCustomerViewController.h"
-
+#import "AddCustomerTableViewCell.h"
 
 @implementation AddCustomerDataSource
 
@@ -21,7 +21,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@""];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"addCustomerCell"];
     return cell;
 }
 @end
