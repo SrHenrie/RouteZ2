@@ -9,9 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface MapViewViewController : UIViewController {
-    MKMapView *mapView;
-}
+@interface MapViewViewController : UIViewController
+
 @property (strong, nonatomic) IBOutlet NSObject *mapDelegate;
 
 @property (nonatomic, strong)IBOutlet MKMapView *mapView;

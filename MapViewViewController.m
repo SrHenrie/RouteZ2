@@ -7,44 +7,61 @@
 //
 
 #import "MapViewViewController.h"
+@import MapKit;
 
-@interface MapViewViewController ()
-
+@interface MapViewViewController () <MKMapViewDelegate>
 @end
 
 
 //house coordinates
-#define HOUSE_LATITUDE 40.229025;
-#define HOUSE_LONGITUDE -111.674799;
+//#define HOUSE_LATITUDE 40.229025;
+//#define HOUSE_LONGITUDE -111.674799;
 
 #define THE_SPAN 0.30f;
 @implementation MapViewViewController
 
-@synthesize mapView = _mapView;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.mapView setDelegate:self];
+    [self.mapView setShowsUserLocation:YES];
+    
 //create region
-    MKCoordinateRegion myRegion;
+//    MKCoordinateRegion myRegion;
     
     //center
     CLLocationCoordinate2D center;
-    center.latitude = HOUSE_LATITUDE;
-    center.longitude = HOUSE_LONGITUDE;
+//    center.latitude = HOUSE_LATITUDE;
+//    center.longitude = HOUSE_LONGITUDE;
     
-    //span
-    MKCoordinateSpan span;
-    span.latitudeDelta = THE_SPAN;
-    span.longitudeDelta = THE_SPAN;
-    
-    myRegion.center = center;
-    myRegion.span = span;
+//    //span
+//    MKCoordinateSpan span;
+//    span.latitudeDelta = THE_SPAN;
+//    span.longitudeDelta = THE_SPAN;
+//    
+//    myRegion.center = center;
+//    myRegion.span = span;
     
     //set our mapView
     
-    [mapView setRegion:myRegion animated: YES];
+//    [_mapView setRegion:myRegion animated: YES];
 
+}
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
+    
+    // zoom to region containing the user location
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
+    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
+    
+    // add the annotation
+    MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
+    point.coordinate = userLocation.coordinate;
+    point.title = @"The Location";
+    point.subtitle = @"Sub-title";
+    [self.mapView addAnnotation:point];
 }
 
 - (void)didReceiveMemoryWarning {

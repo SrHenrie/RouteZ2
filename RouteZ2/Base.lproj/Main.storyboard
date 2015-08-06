@@ -435,12 +435,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aPn-3K-yio">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <connections>
-                                    <outlet property="delegate" destination="4Qt-eQ-vsZ" id="q4U-0J-FeC"/>
-                                </connections>
-                            </mapView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFz-oq-HP9">
                                 <rect key="frame" x="-2" y="499" width="605" height="44"/>
                                 <items>
@@ -460,6 +454,12 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aPn-3K-yio">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <outlet property="delegate" destination="4Qt-eQ-vsZ" id="q4U-0J-FeC"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -475,7 +475,7 @@
                     <tabBarItem key="tabBarItem" title="Map" id="57y-56-U2S"/>
                     <connections>
                         <outlet property="mapDelegate" destination="4Qt-eQ-vsZ" id="n4R-3p-8lI"/>
-                        <outlet property="mapView" destination="aPn-3K-yio" id="dg9-Hr-vzc"/>
+                        <outlet property="mapView" destination="aPn-3K-yio" id="Gfo-6B-8dV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xGY-Qc-5kV" userLabel="First Responder" sceneMemberID="firstResponder"/>
