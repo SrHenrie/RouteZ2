@@ -22,6 +22,7 @@
 		CC8DF23E1B6D101C00A90BD7 /* CustomerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8DF23D1B6D101C00A90BD7 /* CustomerDataSource.m */; };
 		CC8DF2411B6D103E00A90BD7 /* CustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8DF2401B6D103E00A90BD7 /* CustomerViewController.m */; };
 		CC8DF2441B6D106600A90BD7 /* CustomerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8DF2431B6D106600A90BD7 /* CustomerTableViewCell.m */; };
+		CCC05DE51B74535900973D78 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = CCC05DE41B74535900973D78 /* AppIcon.appiconset */; };
 		CCCAD35D1B6F1C8A00161ACD /* AddCustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD35C1B6F1C8A00161ACD /* AddCustomerViewController.m */; };
 		CCCAD3601B6F1CC500161ACD /* CustomerSelectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD35F1B6F1CC500161ACD /* CustomerSelectedViewController.m */; };
 		CCCAD39D1B6FD42700161ACD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD39C1B6FD42700161ACD /* MapKit.framework */; };
@@ -44,6 +45,7 @@
 		CCCAD4431B74158700161ACD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4421B74158700161ACD /* libsqlite3.dylib */; };
 		CCCAD4451B7415B800161ACD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4441B7415B800161ACD /* Accounts.framework */; };
 		CCCAD4471B7415C200161ACD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4461B7415C200161ACD /* Social.framework */; };
+		DFB182A1128711E37CBD83A7 /* libPods-RouteZ2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8685BE5B18D1312FCB3A6C /* libPods-RouteZ2.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		577BCBC518DD995CF4F43714 /* Pods-RouteZ2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteZ2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RouteZ2/Pods-RouteZ2.debug.xcconfig"; sourceTree = "<group>"; };
+		C458A4F93DC3890F15998225 /* Pods-RouteZ2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteZ2.release.xcconfig"; path = "Pods/Target Support Files/Pods-RouteZ2/Pods-RouteZ2.release.xcconfig"; sourceTree = "<group>"; };
 		CC636B3F1B6C800B00293C45 /* RouteZ2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouteZ2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC636B431B6C800B00293C45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC636B441B6C800B00293C45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 		CC8DF2401B6D103E00A90BD7 /* CustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerViewController.m; sourceTree = "<group>"; };
 		CC8DF2421B6D106600A90BD7 /* CustomerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerTableViewCell.h; sourceTree = "<group>"; };
 		CC8DF2431B6D106600A90BD7 /* CustomerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerTableViewCell.m; sourceTree = "<group>"; };
+		CCC05DE41B74535900973D78 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 		CCCAD35B1B6F1C8A00161ACD /* AddCustomerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerViewController.h; sourceTree = "<group>"; };
 		CCCAD35C1B6F1C8A00161ACD /* AddCustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerViewController.m; sourceTree = "<group>"; };
 		CCCAD35E1B6F1CC500161ACD /* CustomerSelectedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerSelectedViewController.h; sourceTree = "<group>"; };
@@ -115,6 +120,7 @@
 		CCCAD4421B74158700161ACD /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		CCCAD4441B7415B800161ACD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		CCCAD4461B7415C200161ACD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		DC8685BE5B18D1312FCB3A6C /* libPods-RouteZ2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RouteZ2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,7 @@
 				CCCAD4311B7414AA00161ACD /* Parse.framework in Frameworks */,
 				CCCAD39D1B6FD42700161ACD /* MapKit.framework in Frameworks */,
 				CCCAD4331B7414B700161ACD /* Bolts.framework in Frameworks */,
+				DFB182A1128711E37CBD83A7 /* libPods-RouteZ2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,26 +156,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2693C083563F7498680D1261 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				577BCBC518DD995CF4F43714 /* Pods-RouteZ2.debug.xcconfig */,
+				C458A4F93DC3890F15998225 /* Pods-RouteZ2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ACF6957EEF61378896371752 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC8685BE5B18D1312FCB3A6C /* libPods-RouteZ2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CC636B361B6C800B00293C45 = {
 			isa = PBXGroup;
 			children = (
-				CCCAD4461B7415C200161ACD /* Social.framework */,
-				CCCAD4441B7415B800161ACD /* Accounts.framework */,
-				CCCAD4421B74158700161ACD /* libsqlite3.dylib */,
-				CCCAD4401B74157900161ACD /* libz.dylib */,
-				CCCAD43E1B74156600161ACD /* SystemConfiguration.framework */,
-				CCCAD43C1B74155A00161ACD /* Security.framework */,
-				CCCAD43A1B74155200161ACD /* QuartzCore.framework */,
-				CCCAD4381B74153C00161ACD /* CoreGraphics.framework */,
-				CCCAD4361B74153300161ACD /* CFNetwork.framework */,
-				CCCAD4341B74152C00161ACD /* AudioToolbox.framework */,
-				CCCAD4321B7414B700161ACD /* Bolts.framework */,
-				CCCAD4301B7414AA00161ACD /* Parse.framework */,
-				CCCAD3E91B707E9400161ACD /* CoreLocation.framework */,
-				CCCAD39C1B6FD42700161ACD /* MapKit.framework */,
 				CC636B411B6C800B00293C45 /* RouteZ2 */,
 				CC636B5E1B6C800B00293C45 /* RouteZ2Tests */,
 				CC636B401B6C800B00293C45 /* Products */,
+				2693C083563F7498680D1261 /* Pods */,
+				ACF6957EEF61378896371752 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,8 +232,10 @@
 				CC8DF2331B6C970800A90BD7 /* TodaysRouteCellTableViewCell.h */,
 				CC8DF2341B6C970800A90BD7 /* TodaysRouteCellTableViewCell.m */,
 				CC636B521B6C800B00293C45 /* Images.xcassets */,
+				CCC05DE41B74535900973D78 /* AppIcon.appiconset */,
 				CC636B541B6C800B00293C45 /* LaunchScreen.xib */,
 				CC636B491B6C800B00293C45 /* RouteZ2.xcdatamodeld */,
+				CCCAD4481B74322E00161ACD /* FrameWorks */,
 				CC636B421B6C800B00293C45 /* Supporting Files */,
 			);
 			path = RouteZ2;
@@ -253,6 +267,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CCCAD4481B74322E00161ACD /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				CCCAD4461B7415C200161ACD /* Social.framework */,
+				CCCAD4441B7415B800161ACD /* Accounts.framework */,
+				CCCAD4401B74157900161ACD /* libz.dylib */,
+				CCCAD4421B74158700161ACD /* libsqlite3.dylib */,
+				CCCAD43E1B74156600161ACD /* SystemConfiguration.framework */,
+				CCCAD43C1B74155A00161ACD /* Security.framework */,
+				CCCAD43A1B74155200161ACD /* QuartzCore.framework */,
+				CCCAD4381B74153C00161ACD /* CoreGraphics.framework */,
+				CCCAD4361B74153300161ACD /* CFNetwork.framework */,
+				CCCAD4341B74152C00161ACD /* AudioToolbox.framework */,
+				CCCAD4321B7414B700161ACD /* Bolts.framework */,
+				CCCAD4301B7414AA00161ACD /* Parse.framework */,
+				CCCAD3E91B707E9400161ACD /* CoreLocation.framework */,
+				CCCAD39C1B6FD42700161ACD /* MapKit.framework */,
+			);
+			name = FrameWorks;
+			path = ..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -260,9 +296,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC636B651B6C800B00293C45 /* Build configuration list for PBXNativeTarget "RouteZ2" */;
 			buildPhases = (
+				147B7B4FF2D81C102AB4C9DE /* Check Pods Manifest.lock */,
 				CC636B3B1B6C800B00293C45 /* Sources */,
 				CC636B3C1B6C800B00293C45 /* Frameworks */,
 				CC636B3D1B6C800B00293C45 /* Resources */,
+				CE187C6AA7DD7E9DD485F6BB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -339,6 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC05DE51B74535900973D78 /* AppIcon.appiconset in Resources */,
 				CC636B511B6C800B00293C45 /* Main.storyboard in Resources */,
 				CC636B561B6C800B00293C45 /* LaunchScreen.xib in Resources */,
 				CC636B531B6C800B00293C45 /* Images.xcassets in Resources */,
@@ -353,6 +392,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		147B7B4FF2D81C102AB4C9DE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE187C6AA7DD7E9DD485F6BB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RouteZ2/Pods-RouteZ2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC636B3B1B6C800B00293C45 /* Sources */ = {
@@ -501,6 +573,7 @@
 		};
 		CC636B661B6C800B00293C45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 577BCBC518DD995CF4F43714 /* Pods-RouteZ2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -518,6 +591,7 @@
 		};
 		CC636B671B6C800B00293C45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C458A4F93DC3890F15998225 /* Pods-RouteZ2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
