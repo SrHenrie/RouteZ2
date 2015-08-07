@@ -7,6 +7,7 @@
 //
 
 #import "TodaysRouteViewController.h"
+#import <Parse/Parse.h>
 
 @interface TodaysRouteViewController ()
 
@@ -17,7 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    testObject[@"foo"] = @"bar";
+    [testObject saveInBackground];
 }
 - (IBAction)buttonPressed:(id)sender {
     NSLog(@"it worked");
