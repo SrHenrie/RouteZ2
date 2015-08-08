@@ -23,6 +23,15 @@
 		CC8DF2411B6D103E00A90BD7 /* CustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8DF2401B6D103E00A90BD7 /* CustomerViewController.m */; };
 		CC8DF2441B6D106600A90BD7 /* CustomerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8DF2431B6D106600A90BD7 /* CustomerTableViewCell.m */; };
 		CCC05DE51B74535900973D78 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = CCC05DE41B74535900973D78 /* AppIcon.appiconset */; };
+		CCC05DF11B76640800973D78 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05DF01B76640800973D78 /* LoginViewController.m */; };
+		CCC05DF41B76708600973D78 /* AddAppointmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05DF31B76708600973D78 /* AddAppointmentViewController.m */; };
+		CCC05DFD1B76892900973D78 /* AddCustomerFirstNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05DFC1B76892900973D78 /* AddCustomerFirstNameTableViewCell.m */; };
+		CCC05E001B76894200973D78 /* AddCustomerLastNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05DFF1B76894200973D78 /* AddCustomerLastNameTableViewCell.m */; };
+		CCC05E031B76897D00973D78 /* AddCustomerAddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05E021B76897D00973D78 /* AddCustomerAddressTableViewCell.m */; };
+		CCC05E061B76899600973D78 /* AddCustomerPhoneOneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05E051B76899600973D78 /* AddCustomerPhoneOneTableViewCell.m */; };
+		CCC05E091B7689AA00973D78 /* AddCustomerPhoneTwoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05E081B7689AA00973D78 /* AddCustomerPhoneTwoTableViewCell.m */; };
+		CCC05E0C1B7689C500973D78 /* AddCustomerEmailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05E0B1B7689C500973D78 /* AddCustomerEmailTableViewCell.m */; };
+		CCC05E0F1B7689DB00973D78 /* AddCustomerAccountNotesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05E0E1B7689DB00973D78 /* AddCustomerAccountNotesTableViewCell.m */; };
 		CCCAD35D1B6F1C8A00161ACD /* AddCustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD35C1B6F1C8A00161ACD /* AddCustomerViewController.m */; };
 		CCCAD3601B6F1CC500161ACD /* CustomerSelectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD35F1B6F1CC500161ACD /* CustomerSelectedViewController.m */; };
 		CCCAD39D1B6FD42700161ACD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD39C1B6FD42700161ACD /* MapKit.framework */; };
@@ -32,7 +41,6 @@
 		CCCAD3E81B703EF500161ACD /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3E71B703EF500161ACD /* CalendarViewController.m */; };
 		CCCAD3EA1B707E9400161ACD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD3E91B707E9400161ACD /* CoreLocation.framework */; };
 		CCCAD3F01B717F5100161ACD /* AddCustomerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3EF1B717F5100161ACD /* AddCustomerDataSource.m */; };
-		CCCAD42F1B72CB5400161ACD /* AddCustomerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD42E1B72CB5400161ACD /* AddCustomerTableViewCell.m */; };
 		CCCAD4311B7414AA00161ACD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4301B7414AA00161ACD /* Parse.framework */; };
 		CCCAD4331B7414B700161ACD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4321B7414B700161ACD /* Bolts.framework */; };
 		CCCAD4351B74152C00161ACD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4341B74152C00161ACD /* AudioToolbox.framework */; };
@@ -90,6 +98,24 @@
 		CC8DF2421B6D106600A90BD7 /* CustomerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerTableViewCell.h; sourceTree = "<group>"; };
 		CC8DF2431B6D106600A90BD7 /* CustomerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerTableViewCell.m; sourceTree = "<group>"; };
 		CCC05DE41B74535900973D78 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
+		CCC05DEF1B76640800973D78 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		CCC05DF01B76640800973D78 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		CCC05DF21B76708600973D78 /* AddAppointmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAppointmentViewController.h; sourceTree = "<group>"; };
+		CCC05DF31B76708600973D78 /* AddAppointmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAppointmentViewController.m; sourceTree = "<group>"; };
+		CCC05DFB1B76892900973D78 /* AddCustomerFirstNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerFirstNameTableViewCell.h; sourceTree = "<group>"; };
+		CCC05DFC1B76892900973D78 /* AddCustomerFirstNameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerFirstNameTableViewCell.m; sourceTree = "<group>"; };
+		CCC05DFE1B76894200973D78 /* AddCustomerLastNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerLastNameTableViewCell.h; sourceTree = "<group>"; };
+		CCC05DFF1B76894200973D78 /* AddCustomerLastNameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerLastNameTableViewCell.m; sourceTree = "<group>"; };
+		CCC05E011B76897D00973D78 /* AddCustomerAddressTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerAddressTableViewCell.h; sourceTree = "<group>"; };
+		CCC05E021B76897D00973D78 /* AddCustomerAddressTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerAddressTableViewCell.m; sourceTree = "<group>"; };
+		CCC05E041B76899600973D78 /* AddCustomerPhoneOneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerPhoneOneTableViewCell.h; sourceTree = "<group>"; };
+		CCC05E051B76899600973D78 /* AddCustomerPhoneOneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerPhoneOneTableViewCell.m; sourceTree = "<group>"; };
+		CCC05E071B7689AA00973D78 /* AddCustomerPhoneTwoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerPhoneTwoTableViewCell.h; sourceTree = "<group>"; };
+		CCC05E081B7689AA00973D78 /* AddCustomerPhoneTwoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerPhoneTwoTableViewCell.m; sourceTree = "<group>"; };
+		CCC05E0A1B7689C500973D78 /* AddCustomerEmailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerEmailTableViewCell.h; sourceTree = "<group>"; };
+		CCC05E0B1B7689C500973D78 /* AddCustomerEmailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerEmailTableViewCell.m; sourceTree = "<group>"; };
+		CCC05E0D1B7689DB00973D78 /* AddCustomerAccountNotesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerAccountNotesTableViewCell.h; sourceTree = "<group>"; };
+		CCC05E0E1B7689DB00973D78 /* AddCustomerAccountNotesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerAccountNotesTableViewCell.m; sourceTree = "<group>"; };
 		CCCAD35B1B6F1C8A00161ACD /* AddCustomerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerViewController.h; sourceTree = "<group>"; };
 		CCCAD35C1B6F1C8A00161ACD /* AddCustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerViewController.m; sourceTree = "<group>"; };
 		CCCAD35E1B6F1CC500161ACD /* CustomerSelectedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerSelectedViewController.h; sourceTree = "<group>"; };
@@ -106,8 +132,6 @@
 		CCCAD3E91B707E9400161ACD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CCCAD3EE1B717F5100161ACD /* AddCustomerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddCustomerDataSource.h; path = ../AddCustomerDataSource.h; sourceTree = "<group>"; };
 		CCCAD3EF1B717F5100161ACD /* AddCustomerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddCustomerDataSource.m; path = ../AddCustomerDataSource.m; sourceTree = "<group>"; };
-		CCCAD42D1B72CB5400161ACD /* AddCustomerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerTableViewCell.h; sourceTree = "<group>"; };
-		CCCAD42E1B72CB5400161ACD /* AddCustomerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerTableViewCell.m; sourceTree = "<group>"; };
 		CCCAD4301B7414AA00161ACD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		CCCAD4321B7414B700161ACD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		CCCAD4341B74152C00161ACD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -203,12 +227,16 @@
 				CC636B6C1B6C87B500293C45 /* MainViewController.m */,
 				CC636B4C1B6C800B00293C45 /* ViewController.h */,
 				CC636B4D1B6C800B00293C45 /* ViewController.m */,
+				CCC05DEF1B76640800973D78 /* LoginViewController.h */,
+				CCC05DF01B76640800973D78 /* LoginViewController.m */,
 				CCCAD3A41B6FF40600161ACD /* SettingsViewController.h */,
 				CCCAD3A51B6FF40600161ACD /* SettingsViewController.m */,
 				CCCAD3A71B6FF42600161ACD /* SettingsDataSource.h */,
 				CCCAD3A81B6FF42600161ACD /* SettingsDataSource.m */,
 				CCCAD39E1B6FD64D00161ACD /* MapViewViewController.h */,
 				CCCAD39F1B6FD64D00161ACD /* MapViewViewController.m */,
+				CCC05DF21B76708600973D78 /* AddAppointmentViewController.h */,
+				CCC05DF31B76708600973D78 /* AddAppointmentViewController.m */,
 				CCCAD3E61B703EF500161ACD /* CalendarViewController.h */,
 				CCCAD3E71B703EF500161ACD /* CalendarViewController.m */,
 				CCCAD35E1B6F1CC500161ACD /* CustomerSelectedViewController.h */,
@@ -219,18 +247,8 @@
 				CC8DF2401B6D103E00A90BD7 /* CustomerViewController.m */,
 				CC8DF2421B6D106600A90BD7 /* CustomerTableViewCell.h */,
 				CC8DF2431B6D106600A90BD7 /* CustomerTableViewCell.m */,
-				CCCAD35B1B6F1C8A00161ACD /* AddCustomerViewController.h */,
-				CCCAD35C1B6F1C8A00161ACD /* AddCustomerViewController.m */,
-				CCCAD3EE1B717F5100161ACD /* AddCustomerDataSource.h */,
-				CCCAD3EF1B717F5100161ACD /* AddCustomerDataSource.m */,
-				CCCAD42D1B72CB5400161ACD /* AddCustomerTableViewCell.h */,
-				CCCAD42E1B72CB5400161ACD /* AddCustomerTableViewCell.m */,
-				CC8DF2361B6C977E00A90BD7 /* TodaysRouteViewController.h */,
-				CC8DF2371B6C977E00A90BD7 /* TodaysRouteViewController.m */,
-				CC8DF2391B6D01E500A90BD7 /* TodaysRouteDataSource.h */,
-				CC8DF23A1B6D01E500A90BD7 /* TodaysRouteDataSource.m */,
-				CC8DF2331B6C970800A90BD7 /* TodaysRouteCellTableViewCell.h */,
-				CC8DF2341B6C970800A90BD7 /* TodaysRouteCellTableViewCell.m */,
+				CCC05E111B768A4300973D78 /* AddCustomerView */,
+				CCC05E121B768A6B00973D78 /* TodaysRouteView */,
 				CC636B521B6C800B00293C45 /* Images.xcassets */,
 				CCC05DE41B74535900973D78 /* AppIcon.appiconset */,
 				CC636B541B6C800B00293C45 /* LaunchScreen.xib */,
@@ -265,6 +283,44 @@
 				CC636B601B6C800B00293C45 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCC05E111B768A4300973D78 /* AddCustomerView */ = {
+			isa = PBXGroup;
+			children = (
+				CCCAD35B1B6F1C8A00161ACD /* AddCustomerViewController.h */,
+				CCCAD35C1B6F1C8A00161ACD /* AddCustomerViewController.m */,
+				CCCAD3EE1B717F5100161ACD /* AddCustomerDataSource.h */,
+				CCCAD3EF1B717F5100161ACD /* AddCustomerDataSource.m */,
+				CCC05DFB1B76892900973D78 /* AddCustomerFirstNameTableViewCell.h */,
+				CCC05DFC1B76892900973D78 /* AddCustomerFirstNameTableViewCell.m */,
+				CCC05DFE1B76894200973D78 /* AddCustomerLastNameTableViewCell.h */,
+				CCC05DFF1B76894200973D78 /* AddCustomerLastNameTableViewCell.m */,
+				CCC05E0A1B7689C500973D78 /* AddCustomerEmailTableViewCell.h */,
+				CCC05E0B1B7689C500973D78 /* AddCustomerEmailTableViewCell.m */,
+				CCC05E0D1B7689DB00973D78 /* AddCustomerAccountNotesTableViewCell.h */,
+				CCC05E0E1B7689DB00973D78 /* AddCustomerAccountNotesTableViewCell.m */,
+				CCC05E041B76899600973D78 /* AddCustomerPhoneOneTableViewCell.h */,
+				CCC05E051B76899600973D78 /* AddCustomerPhoneOneTableViewCell.m */,
+				CCC05E071B7689AA00973D78 /* AddCustomerPhoneTwoTableViewCell.h */,
+				CCC05E081B7689AA00973D78 /* AddCustomerPhoneTwoTableViewCell.m */,
+				CCC05E011B76897D00973D78 /* AddCustomerAddressTableViewCell.h */,
+				CCC05E021B76897D00973D78 /* AddCustomerAddressTableViewCell.m */,
+			);
+			name = AddCustomerView;
+			sourceTree = "<group>";
+		};
+		CCC05E121B768A6B00973D78 /* TodaysRouteView */ = {
+			isa = PBXGroup;
+			children = (
+				CC8DF2361B6C977E00A90BD7 /* TodaysRouteViewController.h */,
+				CC8DF2371B6C977E00A90BD7 /* TodaysRouteViewController.m */,
+				CC8DF2391B6D01E500A90BD7 /* TodaysRouteDataSource.h */,
+				CC8DF23A1B6D01E500A90BD7 /* TodaysRouteDataSource.m */,
+				CC8DF2331B6C970800A90BD7 /* TodaysRouteCellTableViewCell.h */,
+				CC8DF2341B6C970800A90BD7 /* TodaysRouteCellTableViewCell.m */,
+			);
+			name = TodaysRouteView;
 			sourceTree = "<group>";
 		};
 		CCCAD4481B74322E00161ACD /* FrameWorks */ = {
@@ -436,19 +492,27 @@
 				CC8DF23B1B6D01E500A90BD7 /* TodaysRouteDataSource.m in Sources */,
 				CCCAD3A61B6FF40600161ACD /* SettingsViewController.m in Sources */,
 				CC636B481B6C800B00293C45 /* AppDelegate.m in Sources */,
+				CCC05DFD1B76892900973D78 /* AddCustomerFirstNameTableViewCell.m in Sources */,
+				CCC05DF41B76708600973D78 /* AddAppointmentViewController.m in Sources */,
 				CC8DF2351B6C970800A90BD7 /* TodaysRouteCellTableViewCell.m in Sources */,
-				CCCAD42F1B72CB5400161ACD /* AddCustomerTableViewCell.m in Sources */,
+				CCC05E091B7689AA00973D78 /* AddCustomerPhoneTwoTableViewCell.m in Sources */,
 				CC8DF2411B6D103E00A90BD7 /* CustomerViewController.m in Sources */,
 				CC636B451B6C800B00293C45 /* main.m in Sources */,
+				CCC05E001B76894200973D78 /* AddCustomerLastNameTableViewCell.m in Sources */,
+				CCC05E031B76897D00973D78 /* AddCustomerAddressTableViewCell.m in Sources */,
 				CC636B4E1B6C800B00293C45 /* ViewController.m in Sources */,
+				CCC05E0C1B7689C500973D78 /* AddCustomerEmailTableViewCell.m in Sources */,
 				CC636B6D1B6C87B500293C45 /* MainViewController.m in Sources */,
 				CCCAD3E81B703EF500161ACD /* CalendarViewController.m in Sources */,
 				CCCAD35D1B6F1C8A00161ACD /* AddCustomerViewController.m in Sources */,
 				CCCAD3A01B6FD64D00161ACD /* MapViewViewController.m in Sources */,
 				CC8DF2381B6C977E00A90BD7 /* TodaysRouteViewController.m in Sources */,
 				CC636B4B1B6C800B00293C45 /* RouteZ2.xcdatamodeld in Sources */,
+				CCC05E0F1B7689DB00973D78 /* AddCustomerAccountNotesTableViewCell.m in Sources */,
+				CCC05E061B76899600973D78 /* AddCustomerPhoneOneTableViewCell.m in Sources */,
 				CC8DF2441B6D106600A90BD7 /* CustomerTableViewCell.m in Sources */,
 				CCCAD3F01B717F5100161ACD /* AddCustomerDataSource.m in Sources */,
+				CCC05DF11B76640800973D78 /* LoginViewController.m in Sources */,
 				CCCAD3A91B6FF42600161ACD /* SettingsDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
