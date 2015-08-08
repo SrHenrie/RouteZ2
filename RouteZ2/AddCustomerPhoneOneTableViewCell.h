@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AddCustomerPhoneOneTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *phoneOneLabel;
 
 @end

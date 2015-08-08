@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AddCustomerAccountNotesTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *accountNoteLabel;
 
 @end

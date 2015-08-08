@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AddCustomerEmailTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
 
 @end

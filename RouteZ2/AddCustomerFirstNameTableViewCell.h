@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AddCustomerFirstNameTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
 
 @end
