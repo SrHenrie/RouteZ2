@@ -7,7 +7,7 @@
 //
 
 #import "CalendarViewController.h"
-
+#import <CalendarKit.h>
 
 
 @interface CalendarViewController ()
@@ -18,7 +18,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+   
+    CKCalendarViewController *calendar = [CKCalendarViewController new];
+    
+    // 2. Optionally, set up the datasource and delegates
+    [calendar setDelegate:self];
+    [calendar setDataSource:self];
+    
+    // 3. Present the calendar
+    [self presentViewController:calendar animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
