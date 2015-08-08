@@ -1,14 +1,14 @@
 //
-//  AddCustomerTableViewCell.m
-//  RouteZ2
+//  AddCustomerFirstNameTableViewCell.m
+//  
 //
-//  Created by Sarah Henrie on 8/5/15.
-//  Copyright (c) 2015 Sarah Henrie. All rights reserved.
+//  Created by Sarah Henrie on 8/8/15.
+//
 //
 
-#import "AddCustomerTableViewCell.h"
+#import "AddCustomerFirstNameTableViewCell.h"
 
-@implementation AddCustomerTableViewCell
+@implementation AddCustomerFirstNameTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code
