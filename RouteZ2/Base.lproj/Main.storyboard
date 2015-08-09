@@ -73,27 +73,14 @@
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oci-5u-PLn">
-                                                    <rect key="frame" x="252" y="40" width="36" height="30"/>
-                                                    <state key="normal" title="More">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="buttonPressed:" destination="2C9-sk-N9o" eventType="touchUpInside" id="pXh-T8-2gr"/>
-                                                        <action selector="moreButton:" destination="DHN-6Z-2vD" eventType="touchUpInside" id="fTL-53-bhG"/>
-                                                        <segue destination="dGA-us-Wh3" kind="presentation" id="KSg-yl-ah2"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.41481959399980933" green="0.59376242528483114" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="xj6-8V-slo" firstAttribute="top" secondItem="99E-hg-Kgm" secondAttribute="bottom" constant="26" id="3Ed-v0-5D7"/>
                                                 <constraint firstItem="E23-uC-xeB" firstAttribute="top" secondItem="77G-5u-sV5" secondAttribute="bottom" constant="4" id="6hq-FH-yHR"/>
                                                 <constraint firstItem="quI-Cr-bGY" firstAttribute="leading" secondItem="X8l-oD-Zzy" secondAttribute="leadingMargin" id="V3Y-TL-uhl"/>
-                                                <constraint firstItem="Oci-5u-PLn" firstAttribute="top" secondItem="X8l-oD-Zzy" secondAttribute="topMargin" constant="32" id="Vnm-4A-ha5"/>
                                                 <constraint firstItem="xj6-8V-slo" firstAttribute="leading" secondItem="X8l-oD-Zzy" secondAttribute="leadingMargin" id="bJg-PM-4wv"/>
                                                 <constraint firstItem="E23-uC-xeB" firstAttribute="leading" secondItem="77G-5u-sV5" secondAttribute="leading" id="dcD-Sm-4R4"/>
-                                                <constraint firstAttribute="centerX" secondItem="Oci-5u-PLn" secondAttribute="centerX" constant="30" id="eEP-66-sLG"/>
                                                 <constraint firstItem="quI-Cr-bGY" firstAttribute="top" secondItem="99E-hg-Kgm" secondAttribute="bottom" constant="6" id="h4J-fs-sdF"/>
                                                 <constraint firstItem="99E-hg-Kgm" firstAttribute="top" secondItem="X8l-oD-Zzy" secondAttribute="topMargin" id="kT5-Bc-deN"/>
                                                 <constraint firstItem="E23-uC-xeB" firstAttribute="centerY" secondItem="xj6-8V-slo" secondAttribute="centerY" id="kuT-xj-ZAh"/>
@@ -141,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PwT-C1-ej6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2949" y="3928.9999999999995"/>
+            <point key="canvasLocation" x="-2949" y="3904"/>
         </scene>
         <!--Customer-->
         <scene sceneID="t88-Fm-5nF">
