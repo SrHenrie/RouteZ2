@@ -9,6 +9,7 @@
 #import "AddCustomerDataSource.h"
 #import "AddCustomerViewController.h"
 #import "AddCustomerTableViewCell.h"
+#import "AddAppointmentTableViewCell.h"
 
 @implementation AddCustomerDataSource
 
@@ -23,5 +24,6 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"addCustomerCell"];
     return cell;
+    
 }
 @end
