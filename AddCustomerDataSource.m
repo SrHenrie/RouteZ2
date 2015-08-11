@@ -10,6 +10,8 @@
 #import "AddCustomerViewController.h"
 #import "AddCustomerTableViewCell.h"
 #import "AddAppointmentTableViewCell.h"
+#import "HistoryTableViewCell.h"
+#import "NextAppointmentTableViewCell.h"
 
 @implementation AddCustomerDataSource
 
@@ -25,13 +27,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"addCustomerCell"];
+    AddCustomerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"addCustomerCell"];
     UITableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"addAppointmentCell"];
     UITableViewCell *cell2 = [tableView dequeueReusableCellWithIdentifier:@"viewHistoryCell"];
     UITableViewCell *cell3 = [tableView dequeueReusableCellWithIdentifier:@"nextAppointmentCell"];
     
     if (indexPath.section == 0) {
-        return cell;
+               return cell;
     }if (indexPath.section == 1){
         return cell1;
     }if (indexPath.section == 2){
