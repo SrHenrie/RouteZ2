@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8Xb-v0-2jw">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -152,13 +151,16 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yzW-w2-2Y0" id="azq-lx-nMn">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Last Name, First Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWY-KV-7cT">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Last Name, First Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWY-KV-7cT">
                                                     <rect key="frame" x="35" y="18" width="176" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="176" id="tFb-0X-VPi"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yU8-19-0Dj">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yU8-19-0Dj">
                                                     <rect key="frame" x="279" y="18" width="64" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="64" id="OTg-y7-4zR"/>
@@ -168,15 +170,6 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="yU8-19-0Dj" firstAttribute="leading" secondItem="azq-lx-nMn" secondAttribute="leading" constant="279" id="28s-nP-3aG"/>
-                                                <constraint firstItem="ZWY-KV-7cT" firstAttribute="leading" secondItem="azq-lx-nMn" secondAttribute="leadingMargin" constant="20" id="3Kb-Pq-hWj"/>
-                                                <constraint firstItem="yU8-19-0Dj" firstAttribute="leading" secondItem="ZWY-KV-7cT" secondAttribute="trailing" constant="68" id="Au0-GR-CmS"/>
-                                                <constraint firstItem="ZWY-KV-7cT" firstAttribute="top" secondItem="azq-lx-nMn" secondAttribute="topMargin" constant="10" id="HWx-to-FEB"/>
-                                                <constraint firstItem="yU8-19-0Dj" firstAttribute="baseline" secondItem="ZWY-KV-7cT" secondAttribute="baseline" id="YB5-hI-wOf"/>
-                                                <constraint firstItem="yU8-19-0Dj" firstAttribute="firstBaseline" secondItem="ZWY-KV-7cT" secondAttribute="firstBaseline" id="wkj-ED-pl1"/>
-                                                <constraint firstItem="ZWY-KV-7cT" firstAttribute="centerY" secondItem="azq-lx-nMn" secondAttribute="centerY" id="z0n-lH-Cag"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="customerAddressLabel" destination="yU8-19-0Dj" id="Z8O-QL-XsL"/>
