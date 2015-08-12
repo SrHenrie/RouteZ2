@@ -28,18 +28,20 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     AddCustomerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"addCustomerCell"];
-    UITableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"addAppointmentCell"];
-    UITableViewCell *cell2 = [tableView dequeueReusableCellWithIdentifier:@"viewHistoryCell"];
-    UITableViewCell *cell3 = [tableView dequeueReusableCellWithIdentifier:@"nextAppointmentCell"];
+//    UITableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"addAppointmentCell"];
+//    UITableViewCell *cell2 = [tableView dequeueReusableCellWithIdentifier:@"viewHistoryCell"];
+//    UITableViewCell *cell3 = [tableView dequeueReusableCellWithIdentifier:@"nextAppointmentCell"];
     
-    if (indexPath.section == 0) {
+    if (indexPath.row == 0) {
+        cell.customerInfoLabel.text = @"Hello World";
                return cell;
-    }if (indexPath.section == 1){
-        return cell1;
+    }if (indexPath.row == 1){
+        cell.customerInfoLabel.text = @"Hi Sarah";
+        return cell;
     }if (indexPath.section == 2){
-        return cell2;
+        return cell;
     }else
-        return cell3;
+        return cell;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
