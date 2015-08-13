@@ -43,7 +43,7 @@
         
 }
 
-- (void)addCustomer:(NSString *)firstName text:(NSString *)lastName text:(NSString *)phoneNumber1 text:(NSString *)phoneNumber2 text:(NSString *)address text:(NSString *)email text:(NSString *)notes{
+- (void)addCustomerWithFirstName:(NSString *)firstName lastName:(NSString *)lastName phoneNumber1:(NSString *)phoneNumber1 phoneNumber2:(NSString *)phoneNumber2 address:(NSString *)address email:(NSString *)email notes:(NSString *)notes{
         
         Customer *customer = [Customer object];
         

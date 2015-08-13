@@ -45,7 +45,6 @@
 		CCCAD3A91B6FF42600161ACD /* SettingsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3A81B6FF42600161ACD /* SettingsDataSource.m */; };
 		CCCAD3E81B703EF500161ACD /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3E71B703EF500161ACD /* CalendarViewController.m */; };
 		CCCAD3EA1B707E9400161ACD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD3E91B707E9400161ACD /* CoreLocation.framework */; };
-		CCCAD3F01B717F5100161ACD /* AddCustomerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3EF1B717F5100161ACD /* AddCustomerDataSource.m */; };
 		CCCAD4311B7414AA00161ACD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4301B7414AA00161ACD /* Parse.framework */; };
 		CCCAD4331B7414B700161ACD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4321B7414B700161ACD /* Bolts.framework */; };
 		CCCAD4351B74152C00161ACD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4341B74152C00161ACD /* AudioToolbox.framework */; };
@@ -145,8 +144,6 @@
 		CCCAD3E61B703EF500161ACD /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarViewController.h; path = ../CalendarViewController.h; sourceTree = "<group>"; };
 		CCCAD3E71B703EF500161ACD /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarViewController.m; path = ../CalendarViewController.m; sourceTree = "<group>"; };
 		CCCAD3E91B707E9400161ACD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		CCCAD3EE1B717F5100161ACD /* AddCustomerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddCustomerDataSource.h; path = ../AddCustomerDataSource.h; sourceTree = "<group>"; };
-		CCCAD3EF1B717F5100161ACD /* AddCustomerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddCustomerDataSource.m; path = ../AddCustomerDataSource.m; sourceTree = "<group>"; };
 		CCCAD4301B7414AA00161ACD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		CCCAD4321B7414B700161ACD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		CCCAD4341B74152C00161ACD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -298,8 +295,6 @@
 			children = (
 				CCCAD35B1B6F1C8A00161ACD /* AddCustomerViewController.h */,
 				CCCAD35C1B6F1C8A00161ACD /* AddCustomerViewController.m */,
-				CCCAD3EE1B717F5100161ACD /* AddCustomerDataSource.h */,
-				CCCAD3EF1B717F5100161ACD /* AddCustomerDataSource.m */,
 				CCC05E161B76B30700973D78 /* AddCustomerTableViewCell.h */,
 				CCC05E171B76B30700973D78 /* AddCustomerTableViewCell.m */,
 				CCC05E201B76C17100973D78 /* AddAppointmentTableViewCell.h */,
@@ -580,7 +575,6 @@
 				CCC05E221B76C17100973D78 /* AddAppointmentTableViewCell.m in Sources */,
 				CCC05E3F1B7BF90A00973D78 /* CustomerController.m in Sources */,
 				CC8DF2441B6D106600A90BD7 /* CustomerTableViewCell.m in Sources */,
-				CCCAD3F01B717F5100161ACD /* AddCustomerDataSource.m in Sources */,
 				CCC05DF11B76640800973D78 /* LoginViewController.m in Sources */,
 				CCC05E2F1B76C53100973D78 /* NextAppointmentTableViewCell.m in Sources */,
 				CCCAD3A91B6FF42600161ACD /* SettingsDataSource.m in Sources */,

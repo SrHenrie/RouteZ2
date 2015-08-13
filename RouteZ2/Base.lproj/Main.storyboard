@@ -208,7 +208,7 @@
         <scene sceneID="ISK-HB-yeX">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSA-xC-5et" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="y4I-Xv-gJb" customClass="AddCustomerDataSource"/>
+                <customObject id="y4I-Xv-gJb" customClass="AddCustomerViewController"/>
                 <viewController title="AddCustomer" id="GTD-Y9-5kT" customClass="AddCustomerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cil-96-wwa"/>
@@ -330,6 +330,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="tym-44-pc2" id="G9f-MN-pd5"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-1350" y="3542"/>

@@ -23,6 +23,6 @@
 
 @protocol addCustomerDelegate <NSObject>
 
--(void) firstName:(NSString *)firstName fromSender:(AddCustomerTableViewCell *)sender;
+-(void) firstName:(NSString *)inputText fromSender:(AddCustomerTableViewCell *)sender;
 
 @end
