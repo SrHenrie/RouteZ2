@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import "CustomerController.h"
+#import "AddCustomerViewController.h"
 
 @interface AppDelegate ()
 

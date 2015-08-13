@@ -11,8 +11,7 @@
 @implementation AddCustomerTableViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
-      
+    self.customerInfoTextField.delegate = self;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -20,5 +19,12 @@
 
     // Configure the view for the selected state
 }
-
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    [self.delegate firstName:textField.text fromSender:self];
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+}
 @end

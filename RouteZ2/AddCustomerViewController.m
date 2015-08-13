@@ -8,17 +8,26 @@
 
 #import "AddCustomerViewController.h"
 
+
 @interface AddCustomerViewController ()
 
 @end
 
-@implementation AddCustomerViewController
+@implementation AddCustomerViewController 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
     testObject[@"foo"] = @"bar";
     [testObject saveInBackground];
+    
+    
+    
+}
+- (IBAction)saveButton:(UIBarButtonItem *)sender {
+ 
+
+
 }
 
 - (void)didReceiveMemoryWarning {

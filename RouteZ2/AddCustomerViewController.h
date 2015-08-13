@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import "AddCustomerTableViewCell.h"
 
-@interface AddCustomerViewController : UIViewController
+@interface AddCustomerViewController : UIViewController <addCustomerDelegate>
 
 
 @end
