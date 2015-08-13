@@ -27,37 +27,50 @@
 -(void) loadCustomersFromParse{
     
     PFQuery *query = [Customer query];
-                      
-            [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         for (Customer *customer in objects) {
             [customer pin];
         }
     }];
+}
 
 - (NSArray *)customers {
-                          
-            PFQuery *query = [Customer query];
-            [query fromLocalDatastore];
-            return [query findObjects];
-                          
-                      }
-  
+        
+        PFQuery *query = [Customer query];
+        [query fromLocalDatastore];
+        return [query findObjects];
+        
+}
+
 - (void)addCustomer:(NSString *)firstName text:(NSString *)lastName text:(NSString *)phoneNumber1 text:(NSString *)phoneNumber2 text:(NSString *)address text:(NSString *)email text:(NSString *)notes{
         
-        Customer *customers = [Entry object];
+        Customer *customer = [Customer object];
         
-        customers.text = firstName;
-        customers.text = lastName
-        customers.text = phoneNumber1;
-        customers.text = phoneNumber2;
-        customers.text = address;
-        customers.text = email;
-        customers.text = notes;
+        customer.firstName = firstName;
+        customer.lastName = lastName;
+        customer.phoneNumber1 = phoneNumber1;
+        customer.phoneNumber2 = phoneNumber2;
+        customer.address = address;
+        customer.email = email;
+        customer.notes = notes;
         
-        [customers pinInBackground];
-        [customers save];
+        [customer pinInBackground];
+        [customer save];
+        
+    }
+    - (void)removeCustomer:(Customer *)customer {
+        
+        [customer unpinInBackground];
+        [customer deleteInBackground];
+    }
+    
+    - (void)updateCustomer:(Customer *)customer {
+        
+        [customer pinInBackground];
+        [customer save];
         
     }
 
-}
+
 @end
