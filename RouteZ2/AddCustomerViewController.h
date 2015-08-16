@@ -10,7 +10,7 @@
 #import <Parse/Parse.h>
 #import "AddCustomerTableViewCell.h"
 
-@interface AddCustomerViewController : UIViewController <addCustomerDelegate>
+@interface AddCustomerViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 
 @end

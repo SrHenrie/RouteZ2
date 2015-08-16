@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 @import UIKit;
 
-@interface AddCustomerDataSource : NSObject <UITableViewDataSource, UITableViewDelegate>
+@interface AddCustomerDataSource : NSObject 
 
 @end

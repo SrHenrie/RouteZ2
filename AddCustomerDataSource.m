@@ -31,11 +31,11 @@
     UITableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"addAppointmentCell"];
     UITableViewCell *cell2 = [tableView dequeueReusableCellWithIdentifier:@"viewHistoryCell"];
     UITableViewCell *cell3 = [tableView dequeueReusableCellWithIdentifier:@"nextAppointmentCell"];
-   
-
-        if (indexPath.section == 0 && indexPath.row == 0) {
-            cell.customerInfoLabel.text = @"First Name";
-            return cell;
+    
+    
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        cell.customerInfoLabel.text = @"First Name";
+        return cell;
     } if (indexPath.section == 0 && indexPath.row == 1){
         cell.customerInfoLabel.text = @"Last Name";
         return cell;
@@ -53,11 +53,11 @@
         return cell;
     }
     if (indexPath.section == 1 && indexPath.row == 0) {
-    return cell1;
+        return cell1;
     } if (indexPath.section == 2 && indexPath.row == 0){
-    return cell2;
+        return cell2;
     }if (indexPath.section == 3 && indexPath.row == 0){
-    return cell3;
+        return cell3;
     }else
         return cell3;
 }
