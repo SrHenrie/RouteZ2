@@ -478,7 +478,7 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSA-xC-5et" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="y4I-Xv-gJb" customClass="AddCustomerDataSource"/>
+                <customObject id="y4I-Xv-gJb" customClass="AddCustomerViewController"/>
             </objects>
             <point key="canvasLocation" x="-1350" y="3542"/>
         </scene>
