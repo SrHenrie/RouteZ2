@@ -15,9 +15,12 @@
 @property (nonatomic, retain) NSString * lastName;
 @property (nonatomic, retain) NSString * phoneNumber1;
 @property (nonatomic, retain) NSString * phoneNumber2;
-@property (nonatomic, retain) NSString * address;
+@property (nonatomic, retain) NSString * streetAddress;
+@property (nonatomic, retain) NSString * city;
+@property (nonatomic, retain) NSString * state;
+@property (nonatomic, retain) NSString * zip;
 @property (nonatomic, retain) NSString * email;
-@property (nonatomic, retain) NSString * notes;
+@property (nonatomic, retain) NSString * accountNotes;
 
 
 + (NSString *)parseClassName;

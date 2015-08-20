@@ -38,12 +38,12 @@
 - (NSArray *)customers {
         
         PFQuery *query = [Customer query];
-        [query fromLocalDatastore];
+       [[query orderByDescending:@"createdAt" ] fromLocalDatastore];
         return [query findObjects];
         
 }
 
-- (void)addCustomer:(NSString *)firstName text:(NSString *)lastName text:(NSString *)phoneNumber1 text:(NSString *)phoneNumber2 text:(NSString *)address text:(NSString *)email text:(NSString *)notes{
+- (void)addCustomer:(NSString *)firstName text:(NSString *)lastName text:(NSString *)phoneNumber1 text:(NSString *)phoneNumber2 text:(NSString *)streetAddress text:(NSString *)city text:(NSString *) state text:(NSString *) zip text:(NSString *)email text:(NSString *)accountNotes{
         
         Customer *customer = [Customer object];
         
@@ -51,13 +51,16 @@
         customer.lastName = lastName;
         customer.phoneNumber1 = phoneNumber1;
         customer.phoneNumber2 = phoneNumber2;
-        customer.address = address;
+        customer.streetAddress = streetAddress;
+        customer.city = city;
+        customer.state = state;
+        customer.zip = zip;
         customer.email = email;
-        customer.notes = notes;
+        customer.accountNotes = accountNotes;
         
         [customer pinInBackground];
         [customer save];
-        
+    
     }
     - (void)removeCustomer:(Customer *)customer {
         

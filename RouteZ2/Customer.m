@@ -8,7 +8,7 @@
 
 #import "Customer.h"
 
-static NSString * const CustomerClassName = @"customer";
+static NSString * const CustomerClassName = @"Customer";
 
 @implementation Customer
 
@@ -16,9 +16,12 @@ static NSString * const CustomerClassName = @"customer";
 @dynamic lastName;
 @dynamic phoneNumber1;
 @dynamic phoneNumber2;
-@dynamic address;
+@dynamic streetAddress;
+@dynamic state;
+@dynamic city;
+@dynamic zip;
 @dynamic email;
-@dynamic notes;
+@dynamic accountNotes;
 
 + (NSString *) parseClassName{
     return CustomerClassName;

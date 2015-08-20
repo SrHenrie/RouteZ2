@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol addCustomerDelegate;
 
 @interface AddCustomerTableViewCell : UITableViewCell <UITextFieldDelegate>
 
@@ -17,12 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *customerInfoTextField;
 
-@property (weak, nonatomic) id <addCustomerDelegate> delegate;
 
 @end
 
-@protocol addCustomerDelegate <NSObject>
 
--(void) firstName:(NSString *)firstName fromSender:(AddCustomerTableViewCell *)sender;
-
-@end

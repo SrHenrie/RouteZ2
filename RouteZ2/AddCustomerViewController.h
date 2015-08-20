@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 #import "AddCustomerTableViewCell.h"
+@class Customer;
 
-@interface AddCustomerViewController : UIViewController <addCustomerDelegate>
+@interface AddCustomerViewController : UIViewController
 
+@property (strong, nonatomic)Customer *customer;
 
 @end

@@ -9,13 +9,14 @@
 #import "CustomerDataSource.h"
 #import "CustomerTableViewCell.h"
 #import "CustomerViewController.h"
+#import "CustomerController.h"
 
 @implementation CustomerDataSource
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 300;
+    return [CustomerController sharedInstance].customers.count;
     
 }
 
