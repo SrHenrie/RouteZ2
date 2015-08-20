@@ -45,21 +45,37 @@
 
 - (void)addCustomer:(NSString *)firstName text:(NSString *)lastName text:(NSString *)phoneNumber1 text:(NSString *)phoneNumber2 text:(NSString *)streetAddress text:(NSString *)city text:(NSString *) state text:(NSString *) zip text:(NSString *)email text:(NSString *)accountNotes{
         
-        Customer *customer = [Customer object];
+//        Customer *customer = [Customer object];
+//        
+//        customer.firstName = firstName;
+//        customer.lastName = lastName;
+//        customer.phoneNumber1 = phoneNumber1;
+//        customer.phoneNumber2 = phoneNumber2;
+//        customer.streetAddress = streetAddress;
+//        customer.city = city;
+//        customer.state = state;
+//        customer.zip = zip;
+//        customer.email = email;
+//        customer.accountNotes= accountNotes;
+//        
+//        [customer pinInBackground];
+//        [customer save];
+    
+    PFObject *customer = [PFObject objectWithClassName:@"Customer"];
+    customer[@"firstName"] = firstName;
+    customer[@"lastName"] = lastName;
+    customer[@"phoneNumber1"] = phoneNumber1;
+    customer[@"phoneNumber2"] = phoneNumber2;
+    customer[@"streetAddress"] = streetAddress;
+    customer[@"city"] = city;
+    customer[@"state"] = state;
+    customer[@"zip"] = zip;
+    customer[@"email"] = email;
+    customer[@"accountNotes"] = accountNotes;
         
-        customer.firstName = firstName;
-        customer.lastName = lastName;
-        customer.phoneNumber1 = phoneNumber1;
-        customer.phoneNumber2 = phoneNumber2;
-        customer.streetAddress = streetAddress;
-        customer.city = city;
-        customer.state = state;
-        customer.zip = zip;
-        customer.email = email;
-        customer.accountNotes = accountNotes;
+    [customer saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         
-        [customer pinInBackground];
-        [customer save];
+    }];
     
     }
     - (void)removeCustomer:(Customer *)customer {

@@ -60,6 +60,7 @@
     if (self.customer){
         self.customer.firstName = self.firstNameTextField.text;
         self.customer.lastName = self.lastNameTextField.text;
+        self.customer.phoneNumber1 = self.phone1TextField.text;
         self.customer.phoneNumber2 = self.phone2TextField.text;
         self.customer.streetAddress = self.streetAddressTextField.text;
         self.customer.city = self.cityTextField.text;
