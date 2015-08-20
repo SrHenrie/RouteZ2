@@ -196,7 +196,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="customerTableView" destination="zC1-JV-bfE" id="6fe-zC-zEJ"/>
-                        <segue destination="SD6-JD-pC0" kind="show" id="1KE-Ro-JLm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3d6-5z-5BX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -440,77 +439,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fa3-Sl-DDn">
-                                <rect key="frame" x="15" y="118" width="177" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="firstNameTextField:" destination="SD6-JD-pC0" eventType="editingDidEnd" id="db4-j4-CCS"/>
-                                </connections>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rX7-ic-7hJ">
                                 <rect key="frame" x="200" y="118" width="246" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="lastNameTextField:" destination="SD6-JD-pC0" eventType="editingDidEnd" id="xi0-53-15g"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone # 1" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zzZ-bo-vD4">
                                 <rect key="frame" x="15" y="156" width="177" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="phone1TextField:" destination="SD6-JD-pC0" eventType="editingDidEnd" id="I87-xd-zST"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone # 2" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C9A-ta-pGu">
                                 <rect key="frame" x="200" y="156" width="177" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="phone2TextField:" destination="SD6-JD-pC0" eventType="editingDidEnd" id="5bd-PI-1q4"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Street Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sa5-MN-f4e">
                                 <rect key="frame" x="15" y="194" width="375" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="streetaddressTextField:" destination="SD6-JD-pC0" eventType="editingDidEnd" id="mb3-Al-P71"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aaw-N4-uUY">
                                 <rect key="frame" x="15" y="270" width="94" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="stateTextField:" destination="SD6-JD-pC0" eventType="editingDidEnd" id="u4p-5h-yCk"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rvE-J4-vgj">
                                 <rect key="frame" x="15" y="232" width="266" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="cityTextField:" destination="SD6-JD-pC0" eventType="editingDidEnd" id="gQ3-PJ-5GZ"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wbz-37-51z">
                                 <rect key="frame" x="133" y="270" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="zipTextField:" destination="SD6-JD-pC0" eventType="editingDidEnd" id="xku-gu-pc9"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="itv-vb-yPd">
                                 <rect key="frame" x="15" y="308" width="376" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="emailTextField:" destination="SD6-JD-pC0" eventType="editingDidEnd" id="9W5-wm-FW3"/>
-                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" text="Account Notes:" translatesAutoresizingMaskIntoConstraints="NO" id="fLX-BL-s5O">
                                 <rect key="frame" x="15" y="356" width="376" height="128"/>
@@ -518,6 +485,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fa3-Sl-DDn">
+                                <rect key="frame" x="15" y="118" width="177" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -889,7 +861,4 @@
             <point key="canvasLocation" x="-2181" y="2657.9999999999995"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Xkr-Ya-Bl6"/>
-    </inferredMetricsTieBreakers>
 </document>
