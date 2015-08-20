@@ -35,7 +35,8 @@
     }];
 }
 
-- (NSArray *)customers {
+
+- (NSArray *)customers{
         
         PFQuery *query = [Customer query];
        [[query orderByDescending:@"createdAt" ] fromLocalDatastore];

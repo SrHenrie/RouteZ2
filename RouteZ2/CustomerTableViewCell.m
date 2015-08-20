@@ -7,6 +7,7 @@
 //
 
 #import "CustomerTableViewCell.h"
+#import "CustomerController.h"
 
 @implementation CustomerTableViewCell
 
