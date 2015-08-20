@@ -15,6 +15,6 @@ static NSString * const CustomerKey = @"customer";
 @interface EditAddCustomerViewController : UIViewController
 
 
-- (void)updateWithCustomerInfo:(Customer *)customer;
+//- (void)updateWithCustomerInfo:(Customer *)customer;
 
 @end

@@ -13,6 +13,8 @@
 
 @interface CustomerViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *customerTableView;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+
 
 @end
 

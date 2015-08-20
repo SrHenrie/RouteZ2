@@ -11,6 +11,7 @@
 #import "CustomerViewController.h"
 #import "CustomerController.h"
 
+
 @implementation CustomerDataSource
 
 
@@ -22,7 +23,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"customerTableViewCell"];
+    CustomerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"customerTableViewCell"];
+    
+    Customer *customer = [CustomerController sharedInstance].customers[indexPath.row];
+    
+    cell.customerNameLabel.text = customer.lastName;
+ 
+    
     return cell;
     
 }

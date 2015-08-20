@@ -9,12 +9,11 @@
 #import <UIKit/UIKit.h>
 
 
-@interface AddCustomerTableViewCell : UITableViewCell <UITextFieldDelegate>
+@interface AddCustomerTableViewCell : UITableViewCell 
 
 
 @property (weak, nonatomic) IBOutlet UILabel *customerInfoLabel;
 
-@property (weak, nonatomic) IBOutlet UITextField *customerInfoTextField;
 
 
 @end

@@ -34,27 +34,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     
-//    [self.view addGestureRecognizer:tap];
+    [self.view addGestureRecognizer:tap];
 
 }
 
--(void)updateWithCustomerInfo:(Customer *)customer{
-    self.customer = customer;
-    
-    self.firstNameTextField.text = customer.firstName;
-    self.lastNameTextField.text = customer.lastName;
-    self.phone1TextField.text = customer.phoneNumber1;
-    self.phone2TextField.text = customer.phoneNumber2;
-    self.streetAddressTextField.text = customer.streetAddress;
-    self.cityTextField.text = customer.city;
-    self.stateTextField.text = customer.state;
-    self.zipTextField.text = customer.zip;
-    self.emailTextField.text = customer.email;
-    self.accountNotesTextView.text = customer.accountNotes;
-    
-}
+//-(void)updateWithCustomerInfo:(Customer *)customer{
+//    self.customer = customer;
+//    
+//    self.firstNameTextField.text = customer.firstName;
+//    self.lastNameTextField.text = customer.lastName;
+//    self.phone1TextField.text = customer.phoneNumber1;
+//    self.phone2TextField.text = customer.phoneNumber2;
+//    self.streetAddressTextField.text = customer.streetAddress;
+//    self.cityTextField.text = customer.city;
+//    self.stateTextField.text = customer.state;
+//    self.zipTextField.text = customer.zip;
+//    self.emailTextField.text = customer.email;
+//    self.accountNotesTextView.text = customer.accountNotes;
+//    
+//}
 
 - (IBAction)saveButton:(id)sender {
     if (self.customer){
