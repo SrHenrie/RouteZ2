@@ -150,35 +150,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="58" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zC1-JV-bfE">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="46" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zC1-JV-bfE">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" id="qKp-Qq-Jzs">
-                                    <rect key="frame" x="0.0" y="64" width="600" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </searchBar>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="customerTableViewCell" rowHeight="58" id="yzW-w2-2Y0" customClass="CustomerTableViewCell">
-                                        <rect key="frame" x="0.0" y="130" width="600" height="58"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="customerTableViewCell" rowHeight="46" id="yzW-w2-2Y0" customClass="CustomerTableViewCell">
+                                        <rect key="frame" x="0.0" y="86" width="600" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yzW-w2-2Y0" id="azq-lx-nMn">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="57.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="45.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name, First Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWY-KV-7cT">
-                                                    <rect key="frame" x="10" y="18" width="183" height="21"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name, First Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWY-KV-7cT">
+                                                    <rect key="frame" x="8" y="-1" width="154" height="46"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yU8-19-0Dj">
-                                                    <rect key="frame" x="252" y="18" width="63" height="21"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yU8-19-0Dj">
+                                                    <rect key="frame" x="184" y="-1" width="393" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="393" id="NQp-3K-gYP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yU8-19-0Dj" firstAttribute="top" secondItem="azq-lx-nMn" secondAttribute="top" constant="-1" id="7zy-G0-ALz"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="yU8-19-0Dj" secondAttribute="trailing" constant="-18" id="BiE-KJ-9Hs"/>
+                                                <constraint firstItem="ZWY-KV-7cT" firstAttribute="top" secondItem="azq-lx-nMn" secondAttribute="topMargin" constant="-9" id="FoJ-IT-wmg"/>
+                                                <constraint firstItem="ZWY-KV-7cT" firstAttribute="centerY" secondItem="azq-lx-nMn" secondAttribute="centerY" id="JF2-BO-EbO"/>
+                                                <constraint firstItem="ZWY-KV-7cT" firstAttribute="baseline" secondItem="yU8-19-0Dj" secondAttribute="baseline" constant="1" id="Jdm-Lf-WxG"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="ZWY-KV-7cT" secondAttribute="leading" id="mdo-Nt-gu4"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="customerAddressLabel" destination="yU8-19-0Dj" id="Z8O-QL-XsL"/>
@@ -207,28 +213,10 @@
                     </navigationItem>
                     <connections>
                         <outlet property="customerTableView" destination="zC1-JV-bfE" id="6fe-zC-zEJ"/>
-                        <outlet property="searchBar" destination="qKp-Qq-Jzs" id="Go5-I5-ffg"/>
-                        <outlet property="searchDisplayController" destination="9qH-nE-cYd" id="IXJ-G8-QAX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3d6-5z-5BX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="CUy-rT-vbk" customClass="CustomerDataSource"/>
-                <searchDisplayController id="C2z-ap-IFb">
-                    <connections>
-                        <outlet property="delegate" destination="Le7-AG-0CZ" id="d4m-f0-PoG"/>
-                        <outlet property="searchContentsController" destination="Le7-AG-0CZ" id="7hS-He-D5v"/>
-                        <outlet property="searchResultsDataSource" destination="Le7-AG-0CZ" id="eb6-l4-I7G"/>
-                        <outlet property="searchResultsDelegate" destination="Le7-AG-0CZ" id="lS1-DI-vpH"/>
-                    </connections>
-                </searchDisplayController>
-                <searchDisplayController id="9qH-nE-cYd">
-                    <connections>
-                        <outlet property="delegate" destination="Le7-AG-0CZ" id="1F7-hz-gyN"/>
-                        <outlet property="searchContentsController" destination="Le7-AG-0CZ" id="gNk-oS-Xx8"/>
-                        <outlet property="searchResultsDataSource" destination="Le7-AG-0CZ" id="mKe-Aw-Ieb"/>
-                        <outlet property="searchResultsDelegate" destination="Le7-AG-0CZ" id="5aC-UC-G3U"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-2181" y="3407"/>
         </scene>

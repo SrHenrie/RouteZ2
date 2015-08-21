@@ -27,8 +27,8 @@
     
     Customer *customer = [CustomerController sharedInstance].customers[indexPath.row];
     
-    cell.customerNameLabel.text = customer.lastName;
- 
+    cell.customerAddressLabel.text = customer.streetAddress;
+    cell.customerNameLabel.text = [NSString stringWithFormat:@"%@ %@", customer.firstName, customer.lastName];
     
     return cell;
     
