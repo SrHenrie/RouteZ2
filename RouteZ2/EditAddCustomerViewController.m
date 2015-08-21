@@ -9,7 +9,7 @@
 #import "EditAddCustomerViewController.h"
 #import "CustomerController.h"
 
-@interface EditAddCustomerViewController () <UITextFieldDelegate, UITextViewDelegate>
+@interface EditAddCustomerViewController () <UITextFieldDelegate, UITextViewDelegate, UIScrollViewDelegate>
 
 @property (nonatomic, strong) Customer *customer;
 
@@ -33,6 +33,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+//    
+//    [self.view addSubview:scrollView];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     
