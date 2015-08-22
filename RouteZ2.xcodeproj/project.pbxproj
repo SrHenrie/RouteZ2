@@ -53,6 +53,7 @@
 		CCCAD4431B74158700161ACD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4421B74158700161ACD /* libsqlite3.dylib */; };
 		CCCAD4451B7415B800161ACD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4441B7415B800161ACD /* Accounts.framework */; };
 		CCCAD4471B7415C200161ACD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4461B7415C200161ACD /* Social.framework */; };
+		CCCC85731B8900B400593ECB /* StaticAddCustomerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCC85721B8900B400593ECB /* StaticAddCustomerTableViewController.m */; };
 		CCD49B701B818F14008F262B /* EditAddCustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD49B6F1B818F14008F262B /* EditAddCustomerViewController.m */; };
 		DFB182A1128711E37CBD83A7 /* libPods-RouteZ2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8685BE5B18D1312FCB3A6C /* libPods-RouteZ2.a */; };
 /* End PBXBuildFile section */
@@ -145,6 +146,8 @@
 		CCCAD4421B74158700161ACD /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		CCCAD4441B7415B800161ACD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		CCCAD4461B7415C200161ACD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		CCCC85711B8900B400593ECB /* StaticAddCustomerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticAddCustomerTableViewController.h; sourceTree = "<group>"; };
+		CCCC85721B8900B400593ECB /* StaticAddCustomerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticAddCustomerTableViewController.m; sourceTree = "<group>"; };
 		CCD49B6E1B818F14008F262B /* EditAddCustomerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAddCustomerViewController.h; sourceTree = "<group>"; };
 		CCD49B6F1B818F14008F262B /* EditAddCustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAddCustomerViewController.m; sourceTree = "<group>"; };
 		DC8685BE5B18D1312FCB3A6C /* libPods-RouteZ2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RouteZ2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,6 +235,8 @@
 				CCC05DF01B76640800973D78 /* LoginViewController.m */,
 				CCD49B6E1B818F14008F262B /* EditAddCustomerViewController.h */,
 				CCD49B6F1B818F14008F262B /* EditAddCustomerViewController.m */,
+				CCCC85711B8900B400593ECB /* StaticAddCustomerTableViewController.h */,
+				CCCC85721B8900B400593ECB /* StaticAddCustomerTableViewController.m */,
 				CCCAD39E1B6FD64D00161ACD /* MapViewViewController.h */,
 				CCCAD39F1B6FD64D00161ACD /* MapViewViewController.m */,
 				CCC05DF21B76708600973D78 /* AddAppointmentViewController.h */,
@@ -530,6 +535,7 @@
 				CC8DF23B1B6D01E500A90BD7 /* TodaysRouteDataSource.m in Sources */,
 				CCC05E3B1B7A970B00973D78 /* ViewHistoryCustomerNameTableViewCell.m in Sources */,
 				CCC05E181B76B30700973D78 /* AddCustomerTableViewCell.m in Sources */,
+				CCCC85731B8900B400593ECB /* StaticAddCustomerTableViewController.m in Sources */,
 				CCC05E2B1B76C50500973D78 /* HistoryTableViewCell.m in Sources */,
 				CCC05E351B7A959400973D78 /* ViewHistoryDataSource.m in Sources */,
 				CCCAD3A61B6FF40600161ACD /* SettingsViewController.m in Sources */,

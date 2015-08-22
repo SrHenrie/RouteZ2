@@ -8,11 +8,9 @@
 
 #import "EditAddCustomerViewController.h"
 #import "CustomerController.h"
-
 @interface EditAddCustomerViewController () <UITextFieldDelegate, UITextViewDelegate, UIScrollViewDelegate>
 
 @property (nonatomic, strong) Customer *customer;
-
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *phone1TextField;
@@ -27,16 +25,25 @@
 
 
 
+
 @end
 
-@implementation EditAddCustomerViewController
+@implementation EditAddCustomerViewController 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
-//    
-//    [self.view addSubview:scrollView];
+//    self.firstNameTextField.delegate = self;
+//    self.lastNameTextField.delegate= self;
+//    self.phone1TextField.delegate = self;
+//    self.phone2TextField.delegate = self;
+//    self.streetAddressTextField.delegate = self;
+//    self.cityTextField.delegate = self;
+//    self.stateTextField.delegate = self;
+//    self.zipTextField.delegate = self;
+//    self.emailTextField.delegate = self;
+//    self.accountNotesTextView.delegate = self;
+    
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     
@@ -60,6 +67,7 @@
 //    
 //}
 
+
 - (IBAction)saveButton:(id)sender {
     if (self.customer){
         self.customer.firstName = self.firstNameTextField.text;
@@ -82,16 +90,13 @@
     }
 }
 
+
 -(BOOL) textFieldShouldReturn:(UITextField *)textField{
     
-    [self.firstNameTextField resignFirstResponder];
+    [textField resignFirstResponder];
     return YES;
 }
 
--(void)dismissKeyboard {
-    
-    [self.firstNameTextField resignFirstResponder];
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
