@@ -723,7 +723,6 @@
                             </tableViewSection>
                         </sections>
                         <connections>
-                            <outlet property="dataSource" destination="MCJ-VJ-vuV" id="F5V-fq-7X8"/>
                             <outlet property="delegate" destination="MCJ-VJ-vuV" id="nqt-I6-Tmo"/>
                         </connections>
                     </tableView>
