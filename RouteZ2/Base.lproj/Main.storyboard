@@ -6,7 +6,6 @@
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Avenir.ttc">
-            <string>Avenir-Black</string>
             <string>Avenir-Book</string>
             <string>Avenir-Book</string>
             <string>Avenir-Book</string>
@@ -21,6 +20,7 @@
             <string>Avenir-Book</string>
             <string>Avenir-Book</string>
             <string>Avenir-Book</string>
+            <string>Avenir-Heavy</string>
             <string>Avenir-Book</string>
         </mutableArray>
         <mutableArray key="HelveticaNeue.ttc">
@@ -166,79 +166,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="46" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zC1-JV-bfE">
-                                <rect key="frame" x="0.0" y="0.0" width="325" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="customerTableViewCell" rowHeight="46" id="yzW-w2-2Y0" customClass="CustomerTableViewCell">
-                                        <rect key="frame" x="0.0" y="86" width="325" height="46"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="customerTableViewCell" textLabel="gUq-ML-cTt" detailTextLabel="Ecf-rU-3JY" rowHeight="46" style="IBUITableViewCellStyleValue1" id="yzW-w2-2Y0" customClass="CustomerTableViewCell">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yzW-w2-2Y0" id="azq-lx-nMn">
-                                            <rect key="frame" x="0.0" y="0.0" width="292" height="45.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="45.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rIP-1T-1l4">
-                                                    <rect key="frame" x="8" y="5" width="393" height="37"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name, First Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWY-KV-7cT">
-                                                            <rect key="frame" x="0.0" y="0.0" width="393" height="17.5"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="393" id="oQa-FH-CEU"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
-                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yU8-19-0Dj">
-                                                            <rect key="frame" x="0.0" y="17.5" width="393" height="19.5"/>
-                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="yU8-19-0Dj" firstAttribute="trailing" secondItem="rIP-1T-1l4" secondAttribute="trailingMargin" id="19A-d7-rl4"/>
-                                                        <constraint firstItem="ZWY-KV-7cT" firstAttribute="top" secondItem="rIP-1T-1l4" secondAttribute="top" id="24q-DG-yJ2"/>
-                                                        <constraint firstItem="ZWY-KV-7cT" firstAttribute="leading" secondItem="rIP-1T-1l4" secondAttribute="leading" id="4Nq-xy-xIU"/>
-                                                        <constraint firstItem="ZWY-KV-7cT" firstAttribute="leading" secondItem="rIP-1T-1l4" secondAttribute="leading" id="9YB-XA-fAw"/>
-                                                        <constraint firstAttribute="bottom" secondItem="yU8-19-0Dj" secondAttribute="bottom" id="CtZ-ej-86H"/>
-                                                        <constraint firstItem="yU8-19-0Dj" firstAttribute="leading" secondItem="rIP-1T-1l4" secondAttribute="leadingMargin" id="DMH-iC-ojc"/>
-                                                        <constraint firstItem="yU8-19-0Dj" firstAttribute="leading" secondItem="rIP-1T-1l4" secondAttribute="leading" id="DvJ-WT-fpz"/>
-                                                        <constraint firstItem="ZWY-KV-7cT" firstAttribute="centerX" secondItem="yU8-19-0Dj" secondAttribute="centerX" id="EVh-Et-nYh"/>
-                                                        <constraint firstAttribute="trailing" secondItem="yU8-19-0Dj" secondAttribute="trailing" id="F0D-fe-TLg"/>
-                                                        <constraint firstItem="yU8-19-0Dj" firstAttribute="bottom" secondItem="rIP-1T-1l4" secondAttribute="bottomMargin" id="Gpg-sM-8ux"/>
-                                                        <constraint firstItem="yU8-19-0Dj" firstAttribute="leading" secondItem="rIP-1T-1l4" secondAttribute="leading" id="Gq2-pG-f1U"/>
-                                                        <constraint firstItem="ZWY-KV-7cT" firstAttribute="trailing" secondItem="rIP-1T-1l4" secondAttribute="trailingMargin" id="Gss-8v-vZ9"/>
-                                                        <constraint firstItem="ZWY-KV-7cT" firstAttribute="top" secondItem="rIP-1T-1l4" secondAttribute="top" id="H2Y-6Y-yaL"/>
-                                                        <constraint firstItem="yU8-19-0Dj" firstAttribute="leading" secondItem="rIP-1T-1l4" secondAttribute="leading" id="M8C-cf-0F8"/>
-                                                        <constraint firstItem="ZWY-KV-7cT" firstAttribute="top" secondItem="rIP-1T-1l4" secondAttribute="top" id="Sfy-aC-jrF"/>
-                                                        <constraint firstItem="yU8-19-0Dj" firstAttribute="centerX" secondItem="rIP-1T-1l4" secondAttribute="centerX" id="TWN-WF-GpJ"/>
-                                                        <constraint firstAttribute="trailing" secondItem="yU8-19-0Dj" secondAttribute="trailing" id="WO2-uw-obD"/>
-                                                        <constraint firstItem="yU8-19-0Dj" firstAttribute="leading" secondItem="rIP-1T-1l4" secondAttribute="leading" id="Wws-kO-chE"/>
-                                                        <constraint firstItem="ZWY-KV-7cT" firstAttribute="centerX" secondItem="rIP-1T-1l4" secondAttribute="centerX" id="XbY-F3-mia"/>
-                                                        <constraint firstAttribute="trailing" secondItem="ZWY-KV-7cT" secondAttribute="trailing" id="Z77-wi-Vx9"/>
-                                                        <constraint firstItem="ZWY-KV-7cT" firstAttribute="leading" secondItem="rIP-1T-1l4" secondAttribute="leading" id="ZvS-PV-ihf"/>
-                                                        <constraint firstItem="ZWY-KV-7cT" firstAttribute="leading" secondItem="rIP-1T-1l4" secondAttribute="leading" id="aFp-a5-Ulm"/>
-                                                        <constraint firstAttribute="trailing" secondItem="ZWY-KV-7cT" secondAttribute="trailing" id="cFP-Ch-Wrx"/>
-                                                        <constraint firstItem="ZWY-KV-7cT" firstAttribute="top" secondItem="rIP-1T-1l4" secondAttribute="top" id="cHC-Dq-0RS"/>
-                                                        <constraint firstAttribute="bottom" secondItem="yU8-19-0Dj" secondAttribute="bottom" id="kzm-Zp-jup"/>
-                                                        <constraint firstAttribute="bottom" secondItem="yU8-19-0Dj" secondAttribute="bottom" id="lt0-Vc-pcJ"/>
-                                                        <constraint firstItem="ZWY-KV-7cT" firstAttribute="top" secondItem="rIP-1T-1l4" secondAttribute="topMargin" id="njY-Gc-RTf"/>
-                                                        <constraint firstItem="yU8-19-0Dj" firstAttribute="trailing" secondItem="ZWY-KV-7cT" secondAttribute="trailing" id="oDt-XP-sYo"/>
-                                                        <constraint firstItem="ZWY-KV-7cT" firstAttribute="leading" secondItem="yU8-19-0Dj" secondAttribute="leading" id="pqY-9K-lR3"/>
-                                                        <constraint firstItem="ZWY-KV-7cT" firstAttribute="leading" secondItem="rIP-1T-1l4" secondAttribute="leadingMargin" id="rx6-en-VhG"/>
-                                                        <constraint firstItem="yU8-19-0Dj" firstAttribute="top" secondItem="ZWY-KV-7cT" secondAttribute="bottom" id="teK-zq-7Hm"/>
-                                                        <constraint firstItem="yU8-19-0Dj" firstAttribute="top" secondItem="rIP-1T-1l4" secondAttribute="top" constant="17.5" id="vlf-Uz-dz4"/>
-                                                    </constraints>
-                                                </stackView>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="First Name, Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gUq-ML-cTt">
+                                                    <rect key="frame" x="15" y="13" width="160.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Street Address" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ecf-rU-3JY">
+                                                    <rect key="frame" x="193" y="14" width="92" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="rIP-1T-1l4" firstAttribute="centerY" secondItem="azq-lx-nMn" secondAttribute="centerY" id="1qR-Er-xOd"/>
-                                                <constraint firstItem="rIP-1T-1l4" firstAttribute="leading" secondItem="azq-lx-nMn" secondAttribute="leadingMargin" id="a0b-Qo-kPc"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="customerAddressLabel" destination="yU8-19-0Dj" id="Z8O-QL-XsL"/>
-                                            <outlet property="customerNameLabel" destination="ZWY-KV-7cT" id="Qcl-or-2tb"/>
+                                            <outlet property="customerAddressLabel" destination="Ecf-rU-3JY" id="W9s-yb-yvM"/>
+                                            <outlet property="customerNameLabel" destination="gUq-ML-cTt" id="s9O-Sb-m1T"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
