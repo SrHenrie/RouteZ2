@@ -11,7 +11,7 @@
 
 @interface CustomerController : NSObject
 
-@property (nonatomic, strong, readonly) NSArray *customers;
+@property (nonatomic, strong, readonly) NSMutableArray *customers;
 
 + (CustomerController *) sharedInstance;
 
