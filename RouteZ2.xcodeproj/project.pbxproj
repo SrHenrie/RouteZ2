@@ -54,6 +54,7 @@
 		CCCAD4451B7415B800161ACD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4441B7415B800161ACD /* Accounts.framework */; };
 		CCCAD4471B7415C200161ACD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4461B7415C200161ACD /* Social.framework */; };
 		CCCC85731B8900B400593ECB /* StaticAddCustomerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCC85721B8900B400593ECB /* StaticAddCustomerTableViewController.m */; };
+		CCCC857C1B8BCFA500593ECB /* DeleteCustomerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCC857B1B8BCFA500593ECB /* DeleteCustomerTableViewCell.m */; };
 		DFB182A1128711E37CBD83A7 /* libPods-RouteZ2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8685BE5B18D1312FCB3A6C /* libPods-RouteZ2.a */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +148,8 @@
 		CCCAD4461B7415C200161ACD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		CCCC85711B8900B400593ECB /* StaticAddCustomerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticAddCustomerTableViewController.h; sourceTree = "<group>"; };
 		CCCC85721B8900B400593ECB /* StaticAddCustomerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticAddCustomerTableViewController.m; sourceTree = "<group>"; };
+		CCCC857A1B8BCFA500593ECB /* DeleteCustomerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteCustomerTableViewCell.h; sourceTree = "<group>"; };
+		CCCC857B1B8BCFA500593ECB /* DeleteCustomerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteCustomerTableViewCell.m; sourceTree = "<group>"; };
 		DC8685BE5B18D1312FCB3A6C /* libPods-RouteZ2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RouteZ2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -293,6 +296,8 @@
 				CCC05E2A1B76C50500973D78 /* HistoryTableViewCell.m */,
 				CCC05E2D1B76C53100973D78 /* NextAppointmentTableViewCell.h */,
 				CCC05E2E1B76C53100973D78 /* NextAppointmentTableViewCell.m */,
+				CCCC857A1B8BCFA500593ECB /* DeleteCustomerTableViewCell.h */,
+				CCCC857B1B8BCFA500593ECB /* DeleteCustomerTableViewCell.m */,
 			);
 			name = AddCustomerView;
 			sourceTree = "<group>";
@@ -532,6 +537,7 @@
 				CCCC85731B8900B400593ECB /* StaticAddCustomerTableViewController.m in Sources */,
 				CCC05E2B1B76C50500973D78 /* HistoryTableViewCell.m in Sources */,
 				CCC05E351B7A959400973D78 /* ViewHistoryDataSource.m in Sources */,
+				CCCC857C1B8BCFA500593ECB /* DeleteCustomerTableViewCell.m in Sources */,
 				CCCAD3A61B6FF40600161ACD /* SettingsViewController.m in Sources */,
 				CC636B481B6C800B00293C45 /* AppDelegate.m in Sources */,
 				CCC05DF41B76708600973D78 /* AddAppointmentViewController.m in Sources */,

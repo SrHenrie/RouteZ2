@@ -21,31 +21,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-//    testObject[@"foo"] = @"bar";
-//    [testObject saveInBackground];
-//    
+    
     self.addCustomerTableView.dataSource = self;
     self.addCustomerTableView.delegate = self;
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    
 }
-- (IBAction)saveButton:(UIBarButtonItem *)sender {
- 
-//    NSLog(@"pressed");
-//    if (self.customer) {
-//        self.customer.firstName = self.cell1.customerInfoTextField.text;
-//        
-//        [[CustomerController sharedInstance] updateCustomer:self.customer];
-//    }else {
-//        [[CustomerController sharedInstance] addCustomer:self.cell1.customerInfoTextField.text text:self.cell1.customerInfoTextField.text text:self.cell1.customerInfoTextField.text text:self.cell1.customerInfoTextField.text text:self.cell1.customerInfoTextField.text text:self.cell1.customerInfoTextField.text text:self.cell1.customerInfoTextField.text];
-//    }
-//    
-  
-}
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     if (section == 0) {
-        return 6;
+        return 10;
     }
     return 1;
 }
@@ -57,6 +46,7 @@
     UITableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"addAppointmentCell"];
     UITableViewCell *cell2 = [tableView dequeueReusableCellWithIdentifier:@"viewHistoryCell"];
     UITableViewCell *cell3 = [tableView dequeueReusableCellWithIdentifier:@"nextAppointmentCell"];
+      UITableViewCell *cell4 = [tableView dequeueReusableCellWithIdentifier:@"deleteCustomerCell"];
     
     
     if (indexPath.section == 0 && indexPath.row == 0) {
@@ -72,25 +62,40 @@
         cell.customerInfoLabel.text = @"Phone #2";
         return cell;
     }if (indexPath.section == 0 && indexPath.row == 4){
-        cell.customerInfoLabel.text = @"Address";
+        cell.customerInfoLabel.text = @"Street Address";
         return cell;
     }if (indexPath.section == 0 && indexPath.row ==5) {
+        cell.customerInfoLabel.text = @"City";
+        return cell;
+    }if (indexPath.section == 0 && indexPath.row ==6) {
+        cell.customerInfoLabel.text = @"State";
+        return cell;
+    }if (indexPath.section == 0 && indexPath.row ==7) {
+        cell.customerInfoLabel.text = @"Zip";
+        return cell;
+    }if (indexPath.section == 0 && indexPath.row ==8) {
         cell.customerInfoLabel.text = @"Email";
         return cell;
+    }if (indexPath.section == 0 && indexPath.row ==9) {
+        cell.customerInfoLabel.text = @"Account Notes";
+        return cell;
     }
+    
     if (indexPath.section == 1 && indexPath.row == 0) {
         return cell1;
     } if (indexPath.section == 2 && indexPath.row == 0){
         return cell2;
     }if (indexPath.section == 3 && indexPath.row == 0){
         return cell3;
+    }if (indexPath.section == 4 && indexPath.row == 0){
+        return cell4;
     }else
-        return cell3;
+        return cell4;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 4;
+    return 5;
 }
 
 
