@@ -25,7 +25,6 @@
     self.addCustomerTableView.dataSource = self;
     self.addCustomerTableView.delegate = self;
     
-    self.automaticallyAdjustsScrollViewInsets = NO;
     
     
 }
