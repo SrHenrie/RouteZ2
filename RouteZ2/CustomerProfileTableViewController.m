@@ -26,6 +26,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *nextAppointmentLabel;
 @property (weak, nonatomic) IBOutlet UITextField *nextAppointmentTextField;
 @property (weak, nonatomic) IBOutlet UIButton *deleteCustomerButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *backButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *editButton;
 
 
 
