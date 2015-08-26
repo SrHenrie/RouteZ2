@@ -46,6 +46,12 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+//-(void) updateWithCustomer : (Customer *)customer{
+//    self.customer = customer;
+//    
+//    self.firstNameLabel.text = customer.
+//}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

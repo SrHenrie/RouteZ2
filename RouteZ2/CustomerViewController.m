@@ -10,6 +10,7 @@
 #import "CustomerTableViewCell.h"
 #import "CustomerController.h"
 #import "CustomerDataSource.h"
+#import "CustomerProfileTableViewController.h"
 
 
 @interface CustomerViewController ()
@@ -32,6 +33,14 @@
     [super viewDidLoad];
 
 }
+
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    
+//    CustomerProfileTableViewController *customerDetailView = [CustomerProfileTableViewController new];
+//    [customerDetailView updateCustomer:[EntryController sharedInstance].entries[indexPath.row]];
+//    
+//}
 - (IBAction)addButtonClicked:(id)sender {
     
     NSLog(@"button clicked");
