@@ -7,10 +7,11 @@
 //
 
 #import "CustomerProfileTableViewController.h"
+#import "Customer.h"
+#import "CustomerController.h"
 
 @interface CustomerProfileTableViewController ()
 
-@property (nonatomic, strong) Customer *customer;
 @property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *phone1Label;
@@ -26,8 +27,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *nextAppointmentLabel;
 @property (weak, nonatomic) IBOutlet UITextField *nextAppointmentTextField;
 @property (weak, nonatomic) IBOutlet UIButton *deleteCustomerButton;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *backButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *editButton;
+
+
 
 
 
@@ -36,28 +38,62 @@
 
 @implementation CustomerProfileTableViewController
 
+- (void)updateWithCustomer: (Customer *)customer {
+
+//    self.customer = customer;
+    
+    self.firstNameLabel.text = self.firstName;
+    self.lastNameLabel.text = self.lastName;
+    self.phone1Label.text = self.phoneNumber1;
+    self.phone2Label.text = self.phoneNumber2;
+    self.streetAddressLabel.text = self.streetAddress;
+    self.cityLabel.text = self.city;
+    self.stateLabel.text = self.state;
+    self.zipLabel.text = self.zip;
+    self.emailLabel.text = self.email;
+    self.accountNotesLabel.text = self.accountNotes;
+    
+
+//    [customer pinInBackground];
+//    [customer save];
+//    [self.tableView reloadData];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self updateWithCustomer:self.customer];
+    
+//    self.firstNameLabel.text = self.firstName;
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-
-//-(void) updateWithCustomer : (Customer *)customer{
-//    self.customer = customer;
-//    
-//    self.firstNameLabel.text = customer.
-//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+}
+- (IBAction)editButton:(id)sender {
+    
+    NSLog(@"edit button clicked");
+    
 }
 
-#pragma mark - Table view data source
+
+//- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    if(indexPath.row == 0)
+//    {
+//        return  UITableViewCellEditingStyleInsert;
+//    }
+//    else
+//    {
+//        return UITableViewCellEditingStyleDelete;
+//    }
+//}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 2;
@@ -82,15 +118,22 @@
     NSLog(@"delete customer clicked");
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
+
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//      UITableViewCell *cell0 = [tableView dequeueReusableCellWithIdentifier:@"cell0" forIndexPath:indexPath];
+//    if (indexPath.section == 0 && indexPath.row==0) {
+//        
+//        self.firstNameLabel.text = self.customer.firstName;
+//        return cell0;
+//    
+//    }else{
+//    
+//    // Configure the cell...
+//    
+//    return cell0;
+//        
+//}
+//}
 
 /*
 // Override to support conditional editing of the table view.

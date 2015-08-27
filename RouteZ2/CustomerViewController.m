@@ -20,33 +20,75 @@
 @end
 
 @implementation CustomerViewController
+//
+//- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+//{
+//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+//    if (self) {
+//        // Custom initialization
+//    }
+//    return self;
+//}
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
 
+-(void)viewWillAppear:(BOOL)animated {
+    [self.customerTableView reloadData];
 }
 
 //- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 //    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 //    
 //    CustomerProfileTableViewController *customerDetailView = [CustomerProfileTableViewController new];
-//    [customerDetailView updateCustomer:[EntryController sharedInstance].entries[indexPath.row]];
+//    [customerDetailView updateCustomer:[CustomerController sharedInstance].customers[indexPath.row]];
 //    
 //}
+
 - (IBAction)addButtonClicked:(id)sender {
     
     NSLog(@"button clicked");
     
 }
 
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    
+//    CustomerProfileTableViewController *customerProfileViewController = [CustomerProfileTableViewController new];
+//    [customerProfileViewController updateWithCustomer:[CustomerController sharedInstance].customers[indexPath.row]];
+//    [self.navigationController pushViewController:customerProfileViewController animated:YES];
+//}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"viewProfile"]) {
+        
+        NSIndexPath *indexPath = [self.customerTableView indexPathForSelectedRow];
+        
+        CustomerProfileTableViewController *viewController = segue.destinationViewController;
+        
+        
+        Customer *customer = [CustomerController sharedInstance].customers[indexPath.row];
+        
+//        [viewController updateWithCustomer:customer];
+        
+        viewController.firstName = customer.firstName;
+        viewController.lastName = customer.lastName;
+        viewController.phoneNumber1 = customer.phoneNumber1;
+        viewController.phoneNumber2 = customer.phoneNumber2;
+        viewController.streetAddress = customer.streetAddress;
+        viewController.city = customer.city;
+        viewController.state = customer.state;
+#warning Ask Ben why this state shows in po customer but not po customer.state
+        viewController.zip = customer.zip;
+        viewController.email = customer.email;
+        viewController.accountNotes = customer.accountNotes;
+        
+        viewController.customer = customer;
+    }
+}
+
+    
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

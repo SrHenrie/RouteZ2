@@ -75,7 +75,7 @@
     customer[@"accountNotes"] = accountNotes;
         
     [customer saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        
+#warning Ask Ben why this takes so long to save.
     }];
     
     }
