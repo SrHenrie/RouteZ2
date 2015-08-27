@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *notesLabel;
-@property (weak, nonatomic) IBOutlet UITextField *notesTextField;
+@property (weak, nonatomic) IBOutlet UILabel *appointmentNotesLabel;
+
 
 @end

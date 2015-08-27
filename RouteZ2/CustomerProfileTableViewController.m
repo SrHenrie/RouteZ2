@@ -48,7 +48,7 @@
     self.phone2Label.text = self.phoneNumber2;
     self.streetAddressLabel.text = self.streetAddress;
     self.cityLabel.text = self.city;
-    self.stateLabel.text = self.state;
+//    self.stateLabel.text = self.state;
     self.zipLabel.text = self.zip;
     self.emailLabel.text = self.email;
     self.accountNotesLabel.text = self.accountNotes;
