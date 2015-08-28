@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66C710235326BF7FA9C13869 /* libPods-RouteZ2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8685BE5B18D1312FCB3A6C /* libPods-RouteZ2.a */; };
 		CC55C2D31B8ECA460071E3F6 /* AddAppointmentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC55C2D21B8ECA460071E3F6 /* AddAppointmentTableViewController.m */; };
 		CC636B451B6C800B00293C45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC636B441B6C800B00293C45 /* main.m */; };
 		CC636B481B6C800B00293C45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC636B471B6C800B00293C45 /* AppDelegate.m */; };
@@ -29,27 +30,12 @@
 		CCC05E3B1B7A970B00973D78 /* ViewHistoryCustomerNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05E3A1B7A970B00973D78 /* ViewHistoryCustomerNameTableViewCell.m */; };
 		CCC05E3F1B7BF90A00973D78 /* CustomerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05E3E1B7BF90A00973D78 /* CustomerController.m */; };
 		CCC05E421B7BF97300973D78 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05E411B7BF97300973D78 /* Customer.m */; };
-		CCCAD39D1B6FD42700161ACD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD39C1B6FD42700161ACD /* MapKit.framework */; };
 		CCCAD3A01B6FD64D00161ACD /* MapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD39F1B6FD64D00161ACD /* MapViewViewController.m */; };
 		CCCAD3A61B6FF40600161ACD /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3A51B6FF40600161ACD /* SettingsViewController.m */; };
 		CCCAD3A91B6FF42600161ACD /* SettingsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3A81B6FF42600161ACD /* SettingsDataSource.m */; };
 		CCCAD3E81B703EF500161ACD /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD3E71B703EF500161ACD /* CalendarViewController.m */; };
-		CCCAD3EA1B707E9400161ACD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD3E91B707E9400161ACD /* CoreLocation.framework */; };
-		CCCAD4311B7414AA00161ACD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4301B7414AA00161ACD /* Parse.framework */; };
-		CCCAD4331B7414B700161ACD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4321B7414B700161ACD /* Bolts.framework */; };
-		CCCAD4351B74152C00161ACD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4341B74152C00161ACD /* AudioToolbox.framework */; };
-		CCCAD4371B74153300161ACD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4361B74153300161ACD /* CFNetwork.framework */; };
-		CCCAD4391B74153C00161ACD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4381B74153C00161ACD /* CoreGraphics.framework */; };
-		CCCAD43B1B74155200161ACD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD43A1B74155200161ACD /* QuartzCore.framework */; };
-		CCCAD43D1B74155A00161ACD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD43C1B74155A00161ACD /* Security.framework */; };
-		CCCAD43F1B74156600161ACD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD43E1B74156600161ACD /* SystemConfiguration.framework */; };
-		CCCAD4411B74157900161ACD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4401B74157900161ACD /* libz.dylib */; };
-		CCCAD4431B74158700161ACD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4421B74158700161ACD /* libsqlite3.dylib */; };
-		CCCAD4451B7415B800161ACD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4441B7415B800161ACD /* Accounts.framework */; };
-		CCCAD4471B7415C200161ACD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCAD4461B7415C200161ACD /* Social.framework */; };
 		CCCC85731B8900B400593ECB /* StaticAddCustomerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCC85721B8900B400593ECB /* StaticAddCustomerTableViewController.m */; };
 		CCCC857F1B8C166900593ECB /* CustomerProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCC857E1B8C166900593ECB /* CustomerProfileTableViewController.m */; };
-		DFB182A1128711E37CBD83A7 /* libPods-RouteZ2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8685BE5B18D1312FCB3A6C /* libPods-RouteZ2.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,7 +92,6 @@
 		CCC05E3E1B7BF90A00973D78 /* CustomerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerController.m; sourceTree = "<group>"; };
 		CCC05E401B7BF97300973D78 /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
 		CCC05E411B7BF97300973D78 /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Customer.m; sourceTree = "<group>"; };
-		CCCAD39C1B6FD42700161ACD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CCCAD39E1B6FD64D00161ACD /* MapViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewViewController.h; path = ../MapViewViewController.h; sourceTree = "<group>"; };
 		CCCAD39F1B6FD64D00161ACD /* MapViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewViewController.m; path = ../MapViewViewController.m; sourceTree = "<group>"; };
 		CCCAD3A41B6FF40600161ACD /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
@@ -115,19 +100,6 @@
 		CCCAD3A81B6FF42600161ACD /* SettingsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsDataSource.m; sourceTree = "<group>"; };
 		CCCAD3E61B703EF500161ACD /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarViewController.h; path = ../CalendarViewController.h; sourceTree = "<group>"; };
 		CCCAD3E71B703EF500161ACD /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarViewController.m; path = ../CalendarViewController.m; sourceTree = "<group>"; };
-		CCCAD3E91B707E9400161ACD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		CCCAD4301B7414AA00161ACD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		CCCAD4321B7414B700161ACD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		CCCAD4341B74152C00161ACD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		CCCAD4361B74153300161ACD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		CCCAD4381B74153C00161ACD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CCCAD43A1B74155200161ACD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		CCCAD43C1B74155A00161ACD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		CCCAD43E1B74156600161ACD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		CCCAD4401B74157900161ACD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		CCCAD4421B74158700161ACD /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		CCCAD4441B7415B800161ACD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
-		CCCAD4461B7415C200161ACD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		CCCC85711B8900B400593ECB /* StaticAddCustomerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticAddCustomerTableViewController.h; sourceTree = "<group>"; };
 		CCCC85721B8900B400593ECB /* StaticAddCustomerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticAddCustomerTableViewController.m; sourceTree = "<group>"; };
 		CCCC857D1B8C166900593ECB /* CustomerProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerProfileTableViewController.h; sourceTree = "<group>"; };
@@ -140,21 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCCAD4471B7415C200161ACD /* Social.framework in Frameworks */,
-				CCCAD4451B7415B800161ACD /* Accounts.framework in Frameworks */,
-				CCCAD4431B74158700161ACD /* libsqlite3.dylib in Frameworks */,
-				CCCAD4411B74157900161ACD /* libz.dylib in Frameworks */,
-				CCCAD43F1B74156600161ACD /* SystemConfiguration.framework in Frameworks */,
-				CCCAD43D1B74155A00161ACD /* Security.framework in Frameworks */,
-				CCCAD43B1B74155200161ACD /* QuartzCore.framework in Frameworks */,
-				CCCAD4391B74153C00161ACD /* CoreGraphics.framework in Frameworks */,
-				CCCAD4371B74153300161ACD /* CFNetwork.framework in Frameworks */,
-				CCCAD4351B74152C00161ACD /* AudioToolbox.framework in Frameworks */,
-				CCCAD3EA1B707E9400161ACD /* CoreLocation.framework in Frameworks */,
-				CCCAD4311B7414AA00161ACD /* Parse.framework in Frameworks */,
-				CCCAD39D1B6FD42700161ACD /* MapKit.framework in Frameworks */,
-				CCCAD4331B7414B700161ACD /* Bolts.framework in Frameworks */,
-				DFB182A1128711E37CBD83A7 /* libPods-RouteZ2.a in Frameworks */,
+				66C710235326BF7FA9C13869 /* libPods-RouteZ2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +190,6 @@
 				CCC05DE41B74535900973D78 /* AppIcon.appiconset */,
 				CC636B541B6C800B00293C45 /* LaunchScreen.xib */,
 				CC636B491B6C800B00293C45 /* RouteZ2.xcdatamodeld */,
-				CCCAD4481B74322E00161ACD /* FrameWorks */,
 				CC636B421B6C800B00293C45 /* Supporting Files */,
 			);
 			path = RouteZ2;
@@ -325,28 +282,6 @@
 				CCC05E3E1B7BF90A00973D78 /* CustomerController.m */,
 			);
 			name = Models;
-			sourceTree = "<group>";
-		};
-		CCCAD4481B74322E00161ACD /* FrameWorks */ = {
-			isa = PBXGroup;
-			children = (
-				CCCAD4461B7415C200161ACD /* Social.framework */,
-				CCCAD4441B7415B800161ACD /* Accounts.framework */,
-				CCCAD4401B74157900161ACD /* libz.dylib */,
-				CCCAD4421B74158700161ACD /* libsqlite3.dylib */,
-				CCCAD43E1B74156600161ACD /* SystemConfiguration.framework */,
-				CCCAD43C1B74155A00161ACD /* Security.framework */,
-				CCCAD43A1B74155200161ACD /* QuartzCore.framework */,
-				CCCAD4381B74153C00161ACD /* CoreGraphics.framework */,
-				CCCAD4361B74153300161ACD /* CFNetwork.framework */,
-				CCCAD4341B74152C00161ACD /* AudioToolbox.framework */,
-				CCCAD4321B7414B700161ACD /* Bolts.framework */,
-				CCCAD4301B7414AA00161ACD /* Parse.framework */,
-				CCCAD3E91B707E9400161ACD /* CoreLocation.framework */,
-				CCCAD39C1B6FD42700161ACD /* MapKit.framework */,
-			);
-			name = FrameWorks;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
