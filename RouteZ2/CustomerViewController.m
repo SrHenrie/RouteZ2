@@ -32,6 +32,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[CustomerController sharedInstance] updateCustomersFromParseLocalDatastore];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -46,11 +47,7 @@
 //    
 //}
 
-- (IBAction)addButtonClicked:(id)sender {
-    
-    NSLog(@"button clicked");
-    
-}
+
 
 //- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 //    [tableView deselectRowAtIndexPath:indexPath animated:YES];
