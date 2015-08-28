@@ -11,17 +11,17 @@
 #import "CustomerController.h"
 
 @interface CustomerProfileTableViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *lastNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *phone1TextField;
+@property (weak, nonatomic) IBOutlet UITextField *phone2TextField;
+@property (weak, nonatomic) IBOutlet UITextField *streetAddressTextField;
+@property (weak, nonatomic) IBOutlet UITextField *cityTextField;
+@property (weak, nonatomic) IBOutlet UITextField *stateTextField;
+@property (weak, nonatomic) IBOutlet UITextField *zipTextField;
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (weak, nonatomic) IBOutlet UITextField *accountNotesTextField;
 
-@property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *phone1Label;
-@property (weak, nonatomic) IBOutlet UILabel *phone2Label;
-@property (weak, nonatomic) IBOutlet UILabel *streetAddressLabel;
-@property (weak, nonatomic) IBOutlet UILabel *cityLabel;
-@property (weak, nonatomic) IBOutlet UILabel *stateLabel;
-@property (weak, nonatomic) IBOutlet UILabel *zipLabel;
-@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
-@property (weak, nonatomic) IBOutlet UILabel *accountNotesLabel;
 @property (weak, nonatomic) IBOutlet UIButton *addAppointmentButton;
 @property (weak, nonatomic) IBOutlet UIButton *viewHistoryButton;
 @property (weak, nonatomic) IBOutlet UILabel *nextAppointmentLabel;
@@ -42,16 +42,19 @@
 
     self.customer = customer;
     
-    self.firstNameLabel.text = customer.firstName;
-    self.lastNameLabel.text = customer.lastName;
-    self.phone1Label.text = customer.phoneNumber1;
-    self.phone2Label.text = customer.phoneNumber2;
-    self.streetAddressLabel.text = customer.streetAddress;
-    self.cityLabel.text = customer.city;
-    self.stateLabel.text = customer.state;
-    self.zipLabel.text = customer.zip;
-    self.emailLabel.text = customer.email;
-    self.accountNotesLabel.text = customer.accountNotes;
+    if (customer.firstName && customer.firstName.length > 0) {
+        self.firstNameTextField.text = customer.firstName;
+        self.firstNameTextField.textColor = [UIColor blackColor];
+    }
+    self.lastNameTextField.text = customer.lastName;
+    self.phone1TextField.text = customer.phoneNumber1;
+    self.phone2TextField.text = customer.phoneNumber2;
+    self.streetAddressTextField.text = customer.streetAddress;
+    self.cityTextField.text = customer.city;
+    self.stateTextField.text = customer.state;
+    self.zipTextField.text = customer.zip;
+    self.emailTextField.text = customer.email;
+    self.accountNotesTextField.text = customer.accountNotes;
     
 
 //    [customer pinInBackground];
