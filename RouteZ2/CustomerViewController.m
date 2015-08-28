@@ -73,6 +73,14 @@
     }
 }
 
+- (IBAction)resetCustomers:(id)sender {
+    [[CustomerController sharedInstance] resetAllCustomersFromParse:^(NSError *error) {
+        if (error == nil) {
+            [[CustomerController sharedInstance] updateCustomersFromParseLocalDatastore];
+            [self.customerTableView reloadData];
+        }
+    }];
+}
     
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

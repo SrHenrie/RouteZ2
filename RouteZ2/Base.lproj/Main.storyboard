@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Avenir.ttc">
@@ -212,17 +213,26 @@
                             <constraint firstItem="zC1-JV-bfE" firstAttribute="leading" secondItem="kGN-3H-P4U" secondAttribute="leading" id="i4y-jG-hfh"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="All Customers" id="Sui-ks-yeA">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="73Z-2h-hRf">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="qtd-7u-qZY">
-                                <rect key="frame" x="558" y="11" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <rightBarButtonItems>
+                            <barButtonItem style="plain" id="73Z-2h-hRf">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="qtd-7u-qZY">
+                                    <rect key="frame" x="558" y="11" width="22" height="22"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <segue destination="MCJ-VJ-vuV" kind="show" id="pWZ-ls-z0I"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem systemItem="trash" id="NxO-wB-pAk">
                                 <connections>
-                                    <segue destination="MCJ-VJ-vuV" kind="show" id="pWZ-ls-z0I"/>
+                                    <action selector="resetCustomers:" destination="Le7-AG-0CZ" id="owv-cE-xGD"/>
                                 </connections>
-                            </button>
-                        </barButtonItem>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="customerTableView" destination="zC1-JV-bfE" id="6fe-zC-zEJ"/>
                     </connections>
@@ -252,6 +262,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name / Company Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZC-vK-GYn">
                                                     <rect key="frame" x="8" y="8" width="584" height="27.5"/>
+                                                    <accessibility key="accessibilityConfiguration" label=""/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>

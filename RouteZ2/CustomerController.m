@@ -21,12 +21,12 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [[CustomerController alloc] init];
-        [sharedInstance loadCustomersFromParse];
+        [sharedInstance loadCustomersFromParse: nil];
     });
     return sharedInstance;
 }
 
--(void) loadCustomersFromParse{
+-(void) loadCustomersFromParse:(void (^)(NSError *error))completion{
     
     PFQuery *query = [Customer query];
     
@@ -34,6 +34,16 @@
         for (Customer *customer in objects) {
             [customer pin];
         }
+        if (completion) {
+            completion(error);
+        }
+    }];
+}
+
+
+- (void)resetAllCustomersFromParse:(void (^)(NSError *error))completion {
+    [PFObject unpinAllInBackground:self.customers block:^(BOOL succeeded, NSError * _Nullable error) {
+        [self loadCustomersFromParse: completion];
     }];
 }
 
@@ -64,26 +74,9 @@
     [mutableCustomers insertObject:customer atIndex:0];
     self.customers = mutableCustomers;
 
-//        [customer pinInBackground];
         [customer saveEventually];
     
-//    PFObject *customer = [PFObject objectWithClassName:@"Customer"];
-//    customer[@"firstName"] = firstName;
-//    customer[@"lastName"] = lastName;
-//    customer[@"phoneNumber1"] = phoneNumber1;
-//    customer[@"phoneNumber2"] = phoneNumber2;
-//    customer[@"streetAddress"] = streetAddress;
-//    customer[@"city"] = city;
-//    customer[@"state"] = state;
-//    customer[@"zip"] = zip;
-//    customer[@"email"] = email;
-//    customer[@"accountNotes"] = accountNotes;
-    
-//    [customer saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-
-//    }];
-    
-    }
+}
     - (void)removeCustomer:(Customer *)customer {
         
         NSMutableArray *mutableCustomers = [NSMutableArray arrayWithArray:self.customers];

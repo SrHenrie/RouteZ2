@@ -78,7 +78,7 @@
 }
 - (IBAction)editButton:(id)sender {
     
-    NSLog(@"edit button clicked");
+    NSLog(@"button clicked");
     
 }
 
@@ -115,7 +115,10 @@
 }
 
 - (IBAction)deleteCustomerButton:(id)sender {
-    NSLog(@"delete customer clicked");
+    
+ 
+  
+    
 }
 
 
