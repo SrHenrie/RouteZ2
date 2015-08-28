@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBCalendarKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,7 +32,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>740DEC377C6955FF2F40D00261D2BF48</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>84F436E2F1A3862D34B600A2E46050CB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9263C2B63A832FC720317607308103F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAED3EF56EDD9263C7370FB538EADF53</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF0C2CD900DF196A0D3B32AC60BE14AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

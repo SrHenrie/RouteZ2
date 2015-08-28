@@ -1,10 +1,16 @@
 PODS:
+  - Bolts/Tasks (1.2.1)
   - MBCalendarKit (3.0.4)
+  - Parse (1.8.1):
+    - Bolts/Tasks (>= 1.2.0)
 
 DEPENDENCIES:
   - MBCalendarKit (~> 3.0.4)
+  - Parse
 
 SPEC CHECKSUMS:
+  Bolts: 7686a5cb204d1ac54cee26f12d9b7622db3f80d1
   MBCalendarKit: 2a3a60f902162a03bb4957966a4b795af998211f
+  Parse: 2155953b1565494095d5fa5c83b3c77f2c677c09
 
 COCOAPODS: 0.38.2

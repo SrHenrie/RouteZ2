@@ -8,8 +8,9 @@
 
 #import "MapViewViewController.h"
 @import MapKit;
+@import CoreLocation;
 
-@interface MapViewViewController () <MKMapViewDelegate>
+@interface MapViewViewController () <MKMapViewDelegate, CLLocationManagerDelegate>
 @end
 
 

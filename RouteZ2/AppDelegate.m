@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 #import "CustomerController.h"
-#import "AddCustomerViewController.h"
+#import "CustomerProfileTableViewController.h"
 #import "StaticAddCustomerTableViewController.h"
 
 @interface AppDelegate ()

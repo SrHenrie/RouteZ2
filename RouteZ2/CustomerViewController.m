@@ -10,6 +10,7 @@
 #import "CustomerTableViewCell.h"
 #import "CustomerController.h"
 #import "CustomerDataSource.h"
+#import "CustomerProfileTableViewController.h"
 
 
 @interface CustomerViewController ()
@@ -19,25 +20,60 @@
 @end
 
 @implementation CustomerViewController
+//
+//- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+//{
+//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+//    if (self) {
+//        // Custom initialization
+//    }
+//    return self;
+//}
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-}
-- (IBAction)addButtonClicked:(id)sender {
-    
-    NSLog(@"button clicked");
-    
+    [[CustomerController sharedInstance] updateCustomersFromParseLocalDatastore];
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [self.customerTableView reloadData];
+}
+
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    
+//    CustomerProfileTableViewController *customerDetailView = [CustomerProfileTableViewController new];
+//    [customerDetailView updateCustomer:[CustomerController sharedInstance].customers[indexPath.row]];
+//    
+//}
+
+
+
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    
+//    CustomerProfileTableViewController *customerProfileViewController = [CustomerProfileTableViewController new];
+//    [customerProfileViewController updateWithCustomer:[CustomerController sharedInstance].customers[indexPath.row]];
+//    [self.navigationController pushViewController:customerProfileViewController animated:YES];
+//}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"viewProfile"]) {
+        
+        NSIndexPath *indexPath = [self.customerTableView indexPathForSelectedRow];
+        
+        CustomerProfileTableViewController *viewController = segue.destinationViewController;
+        
+        
+        Customer *customer = [CustomerController sharedInstance].customers[indexPath.row];
+        
+//        [viewController updateWithCustomer:customer];
+        
+        viewController.customer = customer;
+    }
+}
+
+    
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -10,7 +10,6 @@
 #import <Parse/Parse.h>
 @class Customer;
 
-static NSString * const CustomerKey = @"customer";
 
 @interface StaticAddCustomerTableViewController : UITableViewController 
 

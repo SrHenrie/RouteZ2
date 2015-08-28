@@ -11,9 +11,11 @@
 
 @interface CustomerController : NSObject
 
-@property (nonatomic, strong, readonly) NSMutableArray *customers;
+@property (nonatomic, strong, readonly) NSArray *customers;
 
 + (CustomerController *) sharedInstance;
+
+- (void)updateCustomersFromParseLocalDatastore;
 
 - (void)addCustomer:(NSString *)firstName text:(NSString *)lastName text:(NSString *)phoneNumber1 text:(NSString *)phoneNumber2 text:(NSString *)streetAddress text:(NSString *)city text:(NSString *) state text:(NSString *) zip text:(NSString *)email text:(NSString *)accountNotes;
 

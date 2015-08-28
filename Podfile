@@ -4,6 +4,7 @@
 target 'RouteZ2' do
 
 pod 'MBCalendarKit', '~>3.0.4'
+pod 'Parse'
 
 end
 

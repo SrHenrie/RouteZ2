@@ -86,11 +86,12 @@
         
         [[CustomerController sharedInstance] updateCustomer:self.customer];
         
-        [self.navigationController popViewControllerAnimated:YES];
         
     } else {
         [[CustomerController sharedInstance] addCustomer:self.firstNameTextField.text text:self.lastNameTextField.text  text:self.phone1TextField.text text:self.phone2TextField.text text:self.streetAddressTextField.text text:self.cityTextField.text text:self.stateTextField.text text:self.zipTextField.text text:self.emailTextField.text text:self.accountNotesTextView.text];
     }
+    [self.navigationController popViewControllerAnimated:YES];
+
 }
 
 /*
