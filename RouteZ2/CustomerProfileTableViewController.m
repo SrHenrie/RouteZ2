@@ -40,18 +40,18 @@
 
 - (void)updateWithCustomer: (Customer *)customer {
 
-//    self.customer = customer;
+    self.customer = customer;
     
-    self.firstNameLabel.text = self.firstName;
-    self.lastNameLabel.text = self.lastName;
-    self.phone1Label.text = self.phoneNumber1;
-    self.phone2Label.text = self.phoneNumber2;
-    self.streetAddressLabel.text = self.streetAddress;
-    self.cityLabel.text = self.city;
-//    self.stateLabel.text = self.state;
-    self.zipLabel.text = self.zip;
-    self.emailLabel.text = self.email;
-    self.accountNotesLabel.text = self.accountNotes;
+    self.firstNameLabel.text = customer.firstName;
+    self.lastNameLabel.text = customer.lastName;
+    self.phone1Label.text = customer.phoneNumber1;
+    self.phone2Label.text = customer.phoneNumber2;
+    self.streetAddressLabel.text = customer.streetAddress;
+    self.cityLabel.text = customer.city;
+    self.stateLabel.text = customer.state;
+    self.zipLabel.text = customer.zip;
+    self.emailLabel.text = customer.email;
+    self.accountNotesLabel.text = customer.accountNotes;
     
 
 //    [customer pinInBackground];

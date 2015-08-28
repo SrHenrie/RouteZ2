@@ -72,18 +72,6 @@
         
 //        [viewController updateWithCustomer:customer];
         
-        viewController.firstName = customer.firstName;
-        viewController.lastName = customer.lastName;
-        viewController.phoneNumber1 = customer.phoneNumber1;
-        viewController.phoneNumber2 = customer.phoneNumber2;
-        viewController.streetAddress = customer.streetAddress;
-        viewController.city = customer.city;
-        viewController.state = customer.state;
-#warning Ask Ben why this state shows in po customer but not po customer.state
-        viewController.zip = customer.zip;
-        viewController.email = customer.email;
-        viewController.accountNotes = customer.accountNotes;
-        
         viewController.customer = customer;
     }
 }
