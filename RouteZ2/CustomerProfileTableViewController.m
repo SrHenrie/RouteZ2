@@ -10,7 +10,7 @@
 #import "Customer.h"
 #import "CustomerController.h"
 
-@interface CustomerProfileTableViewController ()
+@interface CustomerProfileTableViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *phone1TextField;
@@ -28,10 +28,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *nextAppointmentTextField;
 @property (weak, nonatomic) IBOutlet UIButton *deleteCustomerButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *editButton;
-
-
-
-
 
 
 @end
@@ -57,35 +53,44 @@
     self.accountNotesTextField.text = customer.accountNotes;
     
 
-//    [customer pinInBackground];
-//    [customer save];
-//    [self.tableView reloadData];
+}
+
+- (IBAction)editButton:(id)sender {
+    [self.firstNameTextField setEnabled:YES];
+    [self.firstNameTextField setEnabled:YES];
+    [self.lastNameTextField setEnabled:YES];
+    [self.phone1TextField setEnabled:YES];
+    [self.phone2TextField setEnabled:YES];
+    [self.streetAddressTextField setEnabled:YES];
+    [self.cityTextField setEnabled:YES];
+    [self.stateTextField setEnabled:YES];
+    [self.zipTextField setEnabled:YES];
+    [self.emailTextField setEnabled:YES];
+    [self.accountNotesTextField setEnabled:YES];
+    
+    
+    
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self updateWithCustomer:self.customer];
+
     
-//    self.firstNameLabel.text = self.firstName;
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     
 }
-- (IBAction)editButton:(id)sender {
-    
-    NSLog(@"button clicked");
-    
-}
 
-
+//
 //- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
 //{
 //    if(indexPath.row == 0)
@@ -119,8 +124,6 @@
 
 - (IBAction)deleteCustomerButton:(id)sender {
     
- 
-  
     
 }
 
