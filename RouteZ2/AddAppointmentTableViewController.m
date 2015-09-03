@@ -7,8 +7,12 @@
 //
 
 #import "AddAppointmentTableViewController.h"
+#import "Customer.h"
+#import "CustomerController.h"
 
 @interface AddAppointmentTableViewController ()
+
+@property(strong, nonatomic) Customer *customer;
 
 @end
 
@@ -17,17 +21,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+}
+- (void)updateWithCustomer: (Customer *)customer {
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.customer = customer;
+    
+   
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+  }
 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

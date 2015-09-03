@@ -27,7 +27,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *nextAppointmentLabel;
 @property (weak, nonatomic) IBOutlet UITextField *nextAppointmentTextField;
 @property (weak, nonatomic) IBOutlet UIButton *deleteCustomerButton;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *editButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
+
 
 
 @end
@@ -54,24 +55,25 @@
     
 
 }
+//
+//- (IBAction)editButton:(id)sender {
+//    [self.firstNameTextField setEnabled:YES];
+//    [self.firstNameTextField setEnabled:YES];
+//    [self.lastNameTextField setEnabled:YES];
+//    [self.phone1TextField setEnabled:YES];
+//    [self.phone2TextField setEnabled:YES];
+//    [self.streetAddressTextField setEnabled:YES];
+//    [self.cityTextField setEnabled:YES];
+//    [self.stateTextField setEnabled:YES];
+//    [self.zipTextField setEnabled:YES];
+//    [self.emailTextField setEnabled:YES];
+//    [self.accountNotesTextField setEnabled:YES];
+//    
+//    self.editButton.title = @"Done";
 
-- (IBAction)editButton:(id)sender {
-    [self.firstNameTextField setEnabled:YES];
-    [self.firstNameTextField setEnabled:YES];
-    [self.lastNameTextField setEnabled:YES];
-    [self.phone1TextField setEnabled:YES];
-    [self.phone2TextField setEnabled:YES];
-    [self.streetAddressTextField setEnabled:YES];
-    [self.cityTextField setEnabled:YES];
-    [self.stateTextField setEnabled:YES];
-    [self.zipTextField setEnabled:YES];
-    [self.emailTextField setEnabled:YES];
-    [self.accountNotesTextField setEnabled:YES];
     
     
-    
-    
-}
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -114,6 +116,33 @@
     }
     return 4;
 }
+
+- (IBAction)saveButton:(id)sender {
+    if (self.customer){
+        self.customer.firstName = self.firstNameTextField.text;
+        self.customer.lastName = self.lastNameTextField.text;
+        self.customer.phoneNumber1 = self.phone1TextField.text;
+        self.customer.phoneNumber2 = self.phone2TextField.text;
+        self.customer.streetAddress = self.streetAddressTextField.text;
+        self.customer.city = self.cityTextField.text;
+        self.customer.state = self.stateTextField.text;
+        self.customer.zip = self.zipTextField.text;
+        self.customer.email= self.emailTextField.text;
+        self.customer.accountNotes = self.accountNotesTextField.text;
+        
+        [[CustomerController sharedInstance] updateCustomer:self.customer];
+        
+        
+    } else {
+        [[CustomerController sharedInstance] addCustomer:self.firstNameTextField.text text:self.lastNameTextField.text  text:self.phone1TextField.text text:self.phone2TextField.text text:self.streetAddressTextField.text text:self.cityTextField.text text:self.stateTextField.text text:self.zipTextField.text text:self.emailTextField.text text:self.accountNotesTextField.text];
+    }
+    [self.navigationController popViewControllerAnimated:YES];
+    
+    
+}
+
+
+
 - (IBAction)addAppointmentButton:(id)sender {
     NSLog(@"appointment clicked");
 }
