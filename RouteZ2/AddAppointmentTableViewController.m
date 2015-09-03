@@ -12,6 +12,7 @@
 #import "CustomerProfileTableViewController.h"
 
 @interface AddAppointmentTableViewController ()
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 
 
 @end
@@ -24,6 +25,12 @@
     [self updateWithCustomer:self.customer];
     
 }
+
+- (IBAction)datePicker:(id)sender {
+    
+    
+}
+
 - (void)updateWithCustomer: (Customer *)customer {
     
     self.customerNameLabel.text = self.customerNameLabel.text = [NSString stringWithFormat:@"%@ %@", customer.firstName, customer.lastName];

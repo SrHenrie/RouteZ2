@@ -16,8 +16,8 @@
 //@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 @property (weak, nonatomic) IBOutlet UITextView *appointmentNotesTextView;
 @property (weak, nonatomic) IBOutlet UIButton *reoccuringAppointmentButton;
-//- (IBAction)saveDateButton:(UIButton *)sender;
-@property (weak, nonatomic) IBOutlet UIButton *doneButton;
+
+
 
 
 @end

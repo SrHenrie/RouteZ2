@@ -26,7 +26,6 @@
             <string>Avenir-Book</string>
             <string>Avenir-Book</string>
             <string>Avenir-Book</string>
-            <string>Avenir-Medium</string>
             <string>Avenir-Book</string>
             <string>Avenir-Book</string>
             <string>Avenir-Book</string>
@@ -39,7 +38,9 @@
             <string>Avenir-Book</string>
             <string>Avenir-Book</string>
             <string>Avenir-Book</string>
-            <string>Avenir-Book</string>
+        </mutableArray>
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -181,7 +182,7 @@
                                                     <rect key="frame" x="15" y="13" width="160.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Street Address" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ecf-rU-3JY">
@@ -490,7 +491,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Appointment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akQ-AD-XU9">
                                                     <rect key="frame" x="56" y="11" width="139" height="21"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="heightClass=regular" fixedFrame="YES">
                                                         <rect key="frame" x="8" y="11" width="122" height="21"/>
@@ -522,13 +523,13 @@
                                         <rect key="frame" x="0.0" y="664" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Vk-07-soH" id="MNk-gf-txe">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O44-gr-4RS">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O44-gr-4RS">
                                                     <rect key="frame" x="138" y="7" width="177" height="40"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="185" id="2ut-8m-y6U"/>
+                                                        <constraint firstAttribute="width" constant="177" id="WRa-Dh-PBW"/>
                                                         <constraint firstAttribute="width" constant="185" id="x6y-hR-6G3"/>
                                                     </constraints>
                                                     <state key="normal" title="Delete Customer">
@@ -550,10 +551,10 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="O44-gr-4RS" firstAttribute="centerY" secondItem="MNk-gf-txe" secondAttribute="centerY" id="0GZ-NV-Ftb"/>
                                                 <constraint firstItem="O44-gr-4RS" firstAttribute="centerY" secondItem="MNk-gf-txe" secondAttribute="centerY" id="Bf7-4Y-Sbz"/>
-                                                <constraint firstItem="O44-gr-4RS" firstAttribute="leading" secondItem="MNk-gf-txe" secondAttribute="leading" constant="138" id="NJ9-Os-N2k"/>
-                                                <constraint firstItem="O44-gr-4RS" firstAttribute="top" secondItem="MNk-gf-txe" secondAttribute="topMargin" constant="-1" id="NPI-dg-9N1"/>
+                                                <constraint firstItem="O44-gr-4RS" firstAttribute="leading" secondItem="MNk-gf-txe" secondAttribute="leading" constant="138" id="CDt-iX-sbr"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="O44-gr-4RS" secondAttribute="bottom" constant="-11.5" id="K9K-We-zY8"/>
+                                                <constraint firstItem="O44-gr-4RS" firstAttribute="top" secondItem="MNk-gf-txe" secondAttribute="topMargin" constant="-1" id="RD0-Sq-YY0"/>
                                                 <constraint firstItem="O44-gr-4RS" firstAttribute="top" secondItem="MNk-gf-txe" secondAttribute="topMargin" constant="-2" id="jru-Tu-vbE"/>
                                                 <constraint firstItem="O44-gr-4RS" firstAttribute="leading" secondItem="MNk-gf-txe" secondAttribute="leadingMargin" constant="28" id="uzE-KN-fDj"/>
                                             </constraints>
@@ -678,7 +679,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Appointment Notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abV-JB-FaF">
                                                     <rect key="frame" x="347" y="11" width="149" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1163,23 +1164,23 @@
                                         <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1NH-tF-38l" id="rVN-yX-vmC">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsh-0F-Wou">
-                                                    <rect key="frame" x="8" y="11" width="75" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsh-0F-Wou">
+                                                    <rect key="frame" x="8" y="11" width="329" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="75" id="IXL-d4-gHo"/>
+                                                        <constraint firstAttribute="width" constant="329" id="PBI-ys-c6e"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" red="0.41833356789999998" green="0.53854304760000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Qsh-0F-Wou" firstAttribute="top" secondItem="rVN-yX-vmC" secondAttribute="topMargin" constant="3" id="K7m-Th-QTC"/>
-                                                <constraint firstItem="Qsh-0F-Wou" firstAttribute="leading" secondItem="rVN-yX-vmC" secondAttribute="leadingMargin" id="sgI-3N-iSl"/>
-                                                <constraint firstItem="Qsh-0F-Wou" firstAttribute="centerY" secondItem="rVN-yX-vmC" secondAttribute="centerY" id="xvY-7L-EGZ"/>
+                                                <constraint firstItem="Qsh-0F-Wou" firstAttribute="leading" secondItem="rVN-yX-vmC" secondAttribute="leadingMargin" id="NhG-m7-4Pw"/>
+                                                <constraint firstItem="Qsh-0F-Wou" firstAttribute="top" secondItem="rVN-yX-vmC" secondAttribute="topMargin" constant="3" id="T5g-9k-Ejo"/>
+                                                <constraint firstItem="Qsh-0F-Wou" firstAttribute="centerY" secondItem="rVN-yX-vmC" secondAttribute="centerY" id="UJe-yM-YSO"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1187,22 +1188,24 @@
                                         <rect key="frame" x="0.0" y="108" width="600" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gOR-zg-JLK" id="9tx-EN-6aZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="119.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9Q-lY-oV8">
-                                                    <rect key="frame" x="276" y="76" width="41" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="81d-qO-uHM"/>
-                                                        <constraint firstAttribute="width" constant="41" id="xVo-7p-Ckj"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
-                                                    <state key="normal" title="Done"/>
-                                                </button>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="4Kt-cZ-MGU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="462937751.19748998">
+                                                        <!--2015-09-03 01:49:11 +0000-->
+                                                    </date>
+                                                    <connections>
+                                                        <action selector="datePicker:" destination="zuU-LY-1qi" eventType="valueChanged" id="d9F-mG-r8c"/>
+                                                    </connections>
+                                                </datePicker>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="L9Q-lY-oV8" secondAttribute="bottom" constant="5.5" id="eQ3-Xw-8EG"/>
-                                                <constraint firstItem="L9Q-lY-oV8" firstAttribute="leading" secondItem="9tx-EN-6aZ" secondAttribute="leading" constant="276" id="jBZ-3y-9q2"/>
+                                                <constraint firstAttribute="trailing" secondItem="4Kt-cZ-MGU" secondAttribute="trailing" id="Di6-V8-UT3"/>
+                                                <constraint firstItem="4Kt-cZ-MGU" firstAttribute="leading" secondItem="9tx-EN-6aZ" secondAttribute="leading" id="Whd-dL-8Es"/>
+                                                <constraint firstItem="4Kt-cZ-MGU" firstAttribute="top" secondItem="9tx-EN-6aZ" secondAttribute="top" id="gbA-AI-W58"/>
+                                                <constraint firstItem="4Kt-cZ-MGU" firstAttribute="centerY" secondItem="9tx-EN-6aZ" secondAttribute="centerY" id="oQB-nn-NpH"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1263,10 +1266,14 @@
                             <outlet property="delegate" destination="zuU-LY-1qi" id="qov-x8-5Eu"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="POc-z9-x1O">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="YqJ-te-bAh"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="appointmentNotesTextView" destination="Aay-7W-F9u" id="gCq-Lk-weR"/>
                         <outlet property="customerNameLabel" destination="Qsh-0F-Wou" id="ZjP-3s-SmI"/>
-                        <outlet property="doneButton" destination="L9Q-lY-oV8" id="yJX-Vb-fXD"/>
+                        <outlet property="datePicker" destination="4Kt-cZ-MGU" id="XZA-wG-eRD"/>
                         <outlet property="reoccuringAppointmentButton" destination="Nvu-b1-U3p" id="bRj-p8-bw6"/>
                     </connections>
                 </tableViewController>
