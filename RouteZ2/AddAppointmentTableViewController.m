@@ -9,10 +9,10 @@
 #import "AddAppointmentTableViewController.h"
 #import "Customer.h"
 #import "CustomerController.h"
+#import "CustomerProfileTableViewController.h"
 
 @interface AddAppointmentTableViewController ()
 
-@property(strong, nonatomic) Customer *customer;
 
 @end
 
@@ -21,11 +21,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self updateWithCustomer:self.customer];
+    
 }
 - (void)updateWithCustomer: (Customer *)customer {
     
-    self.customer = customer;
-    
+    self.customerNameLabel.text = self.customerNameLabel.text = [NSString stringWithFormat:@"%@ %@", customer.firstName, customer.lastName];
    
     
 }
