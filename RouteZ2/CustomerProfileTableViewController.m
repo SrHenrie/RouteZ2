@@ -24,9 +24,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *accountNotesTextField;
 
 @property (weak, nonatomic) IBOutlet UIButton *addAppointmentButton;
-@property (weak, nonatomic) IBOutlet UIButton *viewHistoryButton;
-@property (weak, nonatomic) IBOutlet UILabel *nextAppointmentLabel;
-@property (weak, nonatomic) IBOutlet UITextField *nextAppointmentTextField;
+@property (weak, nonatomic) IBOutlet UIButton *viewAppointmentButton;
 @property (weak, nonatomic) IBOutlet UIButton *deleteCustomerButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
 
@@ -115,7 +113,7 @@
     if (section == 0) {
         return 10;
     }
-    return 4;
+    return 3;
 }
 
 - (IBAction)saveButton:(id)sender {
@@ -148,8 +146,8 @@
     NSLog(@"appointment clicked");
 }
 
-- (IBAction)viewHistoryButton:(id)sender {
-    NSLog(@"View History Button clicked");
+- (IBAction)viewAppointmentButton:(id)sender {
+    NSLog(@"View Appointment Button clicked");
 }
 
 - (IBAction)deleteCustomerButton:(id)sender {

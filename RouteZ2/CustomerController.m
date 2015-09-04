@@ -47,7 +47,6 @@
     }];
 }
 
-
 - (void)updateCustomersFromParseLocalDatastore {
     PFQuery *query = [Customer query];
     [query fromLocalDatastore];
