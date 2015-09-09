@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ViewHistoryViewController.h"
 @import UIKit;
 
 @interface ViewHistoryDataSource : NSObject <UITableViewDataSource, UITableViewDelegate>

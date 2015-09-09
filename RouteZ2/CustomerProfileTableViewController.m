@@ -10,6 +10,9 @@
 #import "Customer.h"
 #import "CustomerController.h"
 #import "AddAppointmentTableViewController.h"
+#import "ViewHistoryViewController.h"
+#import "Appointments.h"
+#import "AppointmentController.h"
 
 @interface CustomerProfileTableViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
@@ -54,25 +57,7 @@
     
 
 }
-//
-//- (IBAction)editButton:(id)sender {
-//    [self.firstNameTextField setEnabled:YES];
-//    [self.firstNameTextField setEnabled:YES];
-//    [self.lastNameTextField setEnabled:YES];
-//    [self.phone1TextField setEnabled:YES];
-//    [self.phone2TextField setEnabled:YES];
-//    [self.streetAddressTextField setEnabled:YES];
-//    [self.cityTextField setEnabled:YES];
-//    [self.stateTextField setEnabled:YES];
-//    [self.zipTextField setEnabled:YES];
-//    [self.emailTextField setEnabled:YES];
-//    [self.accountNotesTextField setEnabled:YES];
-//    
-//    self.editButton.title = @"Done";
 
-    
-    
-//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -91,18 +76,6 @@
     
 }
 
-//
-//- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    if(indexPath.row == 0)
-//    {
-//        return  UITableViewCellEditingStyleInsert;
-//    }
-//    else
-//    {
-//        return UITableViewCellEditingStyleDelete;
-//    }
-//}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 2;
@@ -136,8 +109,6 @@
         [[CustomerController sharedInstance] addCustomer:self.firstNameTextField.text text:self.lastNameTextField.text  text:self.phone1TextField.text text:self.phone2TextField.text text:self.streetAddressTextField.text text:self.cityTextField.text text:self.stateTextField.text text:self.zipTextField.text text:self.emailTextField.text text:self.accountNotesTextField.text];
     }
     [self.navigationController popViewControllerAnimated:YES];
-    
-    
 }
 
 
@@ -150,10 +121,10 @@
     NSLog(@"View Appointment Button clicked");
 }
 
-- (IBAction)deleteCustomerButton:(id)sender {
+- (IBAction)deleteCustomerButton:(id)sender{
+        
+    }
     
-    
-}
 
 
 //- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -214,11 +185,13 @@
         
         AddAppointmentTableViewController *addApt = [segue destinationViewController];
         addApt.customer = self.customer;
-        
-        
+//    } else ([segue.identifier isEqualToString:@"scheduledAppointments"]){
+//        
+//            ViewHistoryViewController *viewApt = [segue destinationViewController];
+//            viewApt.
+        }
     }
     
-}
 
 
 @end

@@ -8,18 +8,22 @@
 
 #import "ViewHistoryDataSource.h"
 #import "ViewHistoryViewController.h"
-#import "ViewHistoryCustomerNameTableViewCell.h"
 #import "ViewHistoryDetailTableViewCell.h"
+#import "AppointmentController.h"
+#import "Appointments.h"
 
 @implementation ViewHistoryDataSource
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 2;
-}
+    
+    return 1;
+//        return [AppointmentController sharedInstance].appointments.count;
+    }
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    ViewHistoryCustomerNameTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"customerNameCell"];
-    return cell;
+    ViewHistoryDetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"appointmentsCell"];
+        return cell;
     
 }
 

@@ -11,8 +11,8 @@
 @interface ViewHistoryDetailTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *notesLabel;
-@property (weak, nonatomic) IBOutlet UILabel *appointmentNotesLabel;
+@property (weak, nonatomic) IBOutlet UITextView *appointmentNotesTextView;
+
 
 
 @end

@@ -10,9 +10,11 @@
 #import "Customer.h"
 #import "CustomerController.h"
 #import "CustomerProfileTableViewController.h"
+#import "AppointmentController.h"
+#import "Appointments.h"
 
 @interface AddAppointmentTableViewController ()
-@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveAppointmentButton;
 
 
 @end
@@ -23,12 +25,25 @@
     [super viewDidLoad];
     
     [self updateWithCustomer:self.customer];
-    
+
 }
 
 - (IBAction)datePicker:(id)sender {
     
+    NSDate *date = [NSDate date];
     
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"yyyy-MM-dd, hh:mm"];
+    NSString *dateString = [dateFormat stringFromDate:date];
+    
+    PFObject *addValues= [PFObject objectWithClassName:@"Appointments"];
+    [addValues setObject: dateString forKey:@"myDateKey"];
+    [addValues saveInBackground];
+    
+
+}
+- (IBAction)saveAppointmentButton:(id)sender {
+        
 }
 
 - (void)updateWithCustomer: (Customer *)customer {

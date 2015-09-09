@@ -29,7 +29,6 @@
 		CCC05E321B7A951700973D78 /* ViewHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05E311B7A951700973D78 /* ViewHistoryViewController.m */; };
 		CCC05E351B7A959400973D78 /* ViewHistoryDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05E341B7A959400973D78 /* ViewHistoryDataSource.m */; };
 		CCC05E381B7A96E800973D78 /* ViewHistoryDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05E371B7A96E800973D78 /* ViewHistoryDetailTableViewCell.m */; };
-		CCC05E3B1B7A970B00973D78 /* ViewHistoryCustomerNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05E3A1B7A970B00973D78 /* ViewHistoryCustomerNameTableViewCell.m */; };
 		CCC05E3F1B7BF90A00973D78 /* CustomerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05E3E1B7BF90A00973D78 /* CustomerController.m */; };
 		CCC05E421B7BF97300973D78 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC05E411B7BF97300973D78 /* Customer.m */; };
 		CCCAD3A01B6FD64D00161ACD /* MapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD39F1B6FD64D00161ACD /* MapViewViewController.m */; };
@@ -92,8 +91,6 @@
 		CCC05E341B7A959400973D78 /* ViewHistoryDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewHistoryDataSource.m; sourceTree = "<group>"; };
 		CCC05E361B7A96E800973D78 /* ViewHistoryDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewHistoryDetailTableViewCell.h; sourceTree = "<group>"; };
 		CCC05E371B7A96E800973D78 /* ViewHistoryDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewHistoryDetailTableViewCell.m; sourceTree = "<group>"; };
-		CCC05E391B7A970B00973D78 /* ViewHistoryCustomerNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewHistoryCustomerNameTableViewCell.h; sourceTree = "<group>"; };
-		CCC05E3A1B7A970B00973D78 /* ViewHistoryCustomerNameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewHistoryCustomerNameTableViewCell.m; sourceTree = "<group>"; };
 		CCC05E3D1B7BF90A00973D78 /* CustomerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerController.h; sourceTree = "<group>"; };
 		CCC05E3E1B7BF90A00973D78 /* CustomerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerController.m; sourceTree = "<group>"; };
 		CCC05E401B7BF97300973D78 /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
@@ -262,8 +259,6 @@
 				CCC05E341B7A959400973D78 /* ViewHistoryDataSource.m */,
 				CCC05E361B7A96E800973D78 /* ViewHistoryDetailTableViewCell.h */,
 				CCC05E371B7A96E800973D78 /* ViewHistoryDetailTableViewCell.m */,
-				CCC05E391B7A970B00973D78 /* ViewHistoryCustomerNameTableViewCell.h */,
-				CCC05E3A1B7A970B00973D78 /* ViewHistoryCustomerNameTableViewCell.m */,
 			);
 			name = ViewHistoryView;
 			sourceTree = "<group>";
@@ -440,7 +435,6 @@
 				CC8DF23E1B6D101C00A90BD7 /* CustomerDataSource.m in Sources */,
 				CC8DF23B1B6D01E500A90BD7 /* TodaysRouteDataSource.m in Sources */,
 				CCCC857F1B8C166900593ECB /* CustomerProfileTableViewController.m in Sources */,
-				CCC05E3B1B7A970B00973D78 /* ViewHistoryCustomerNameTableViewCell.m in Sources */,
 				CCCC85731B8900B400593ECB /* StaticAddCustomerTableViewController.m in Sources */,
 				CCC05E351B7A959400973D78 /* ViewHistoryDataSource.m in Sources */,
 				CCCAD3A61B6FF40600161ACD /* SettingsViewController.m in Sources */,

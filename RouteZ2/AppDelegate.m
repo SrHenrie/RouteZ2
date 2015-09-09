@@ -11,6 +11,8 @@
 #import "CustomerController.h"
 #import "CustomerProfileTableViewController.h"
 #import "StaticAddCustomerTableViewController.h"
+#import "AppointmentController.h"
+#import "ViewHistoryViewController.h"
 
 @interface AppDelegate ()
 
@@ -24,6 +26,8 @@
     [Parse enableLocalDatastore];
     
     [Customer registerSubclass];
+    [Appointments registerSubclass];
+    
     [Parse setApplicationId:@"qjivcTxFjWYGXuIQEmwSctBEIuV0HL8hZE98ac4J"
                   clientKey:@"Wkgid6wxerbasuZnLHDytG199xWOsOIwQcZc8904"];
     return YES;
