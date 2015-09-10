@@ -42,6 +42,9 @@
     
     [[AppointmentController sharedInstance] addAppointments:self.datePicker.date text:self.appointmentNotesTextView.text customer:self.customer];
     
+    [self.navigationController popViewControllerAnimated:YES];
+
+    
 }
 
 - (void)updateWithCustomer: (Customer *)customer {

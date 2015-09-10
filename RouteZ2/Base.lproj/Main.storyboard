@@ -1258,7 +1258,6 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="YqJ-te-bAh">
                             <connections>
                                 <action selector="saveAppointmentButton:" destination="zuU-LY-1qi" id="Ww1-yl-ot0"/>
-                                <segue destination="3NT-9n-a3H" kind="show" id="1ay-SN-Hb3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1427,7 +1426,4 @@
             <point key="canvasLocation" x="-2181" y="2657.9999999999995"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="1ay-SN-Hb3"/>
-    </inferredMetricsTieBreakers>
 </document>
