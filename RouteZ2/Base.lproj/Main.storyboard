@@ -40,9 +40,7 @@
             <string>Avenir-Book</string>
             <string>Avenir-Book</string>
             <string>Avenir-Book</string>
-        </mutableArray>
-        <mutableArray key="HelveticaNeue.ttc">
-            <string>HelveticaNeue-Bold</string>
+            <string>Avenir-Book</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -1171,7 +1169,7 @@
                         <sections>
                             <tableViewSection id="vtW-93-W4F">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1NH-tF-38l">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="1NH-tF-38l">
                                         <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1NH-tF-38l" id="rVN-yX-vmC">
@@ -1183,8 +1181,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="329" id="soc-rx-Et3"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                                    <color key="textColor" red="0.41833356789999998" green="0.53854304760000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1196,7 +1193,7 @@
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="gOR-zg-JLK">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="120" id="gOR-zg-JLK">
                                         <rect key="frame" x="0.0" y="108" width="600" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gOR-zg-JLK" id="9tx-EN-6aZ">
@@ -1221,30 +1218,36 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AOX-5F-XGR">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="AOX-5F-XGR">
                                         <rect key="frame" x="0.0" y="228" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AOX-5F-XGR" id="4si-Gf-boa">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DatePickerLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDJ-Pt-Yqo">
-                                                    <rect key="frame" x="65" y="11" width="137" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--/--/---- , --:--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDJ-Pt-Yqo">
+                                                    <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IDJ-Pt-Yqo" firstAttribute="top" secondItem="4si-Gf-boa" secondAttribute="topMargin" constant="3" id="LlR-dE-iWP"/>
+                                                <constraint firstItem="IDJ-Pt-Yqo" firstAttribute="centerY" secondItem="4si-Gf-boa" secondAttribute="centerY" id="gsA-cX-4oI"/>
+                                                <constraint firstItem="IDJ-Pt-Yqo" firstAttribute="trailing" secondItem="4si-Gf-boa" secondAttribute="trailingMargin" id="nGM-p2-x8f"/>
+                                                <constraint firstItem="IDJ-Pt-Yqo" firstAttribute="leading" secondItem="4si-Gf-boa" secondAttribute="leadingMargin" id="vYf-Kr-EdZ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="voc-Nj-axV">
-                                        <rect key="frame" x="0.0" y="272" width="600" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="76" id="voc-Nj-axV">
+                                        <rect key="frame" x="0.0" y="272" width="600" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="voc-Nj-axV" id="5TN-2B-Jeh">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="76"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Appointment Notes:" translatesAutoresizingMaskIntoConstraints="NO" id="tAZ-OP-hJV">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Appointment Notes:" translatesAutoresizingMaskIntoConstraints="NO" id="tAZ-OP-hJV">
                                                     <rect key="frame" x="0.0" y="0.0" width="592" height="44"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
@@ -1264,18 +1267,26 @@
                             <tableViewSection id="czM-3G-Fzd">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="349" id="9No-A4-2ve">
-                                        <rect key="frame" x="0.0" y="316" width="600" height="349"/>
+                                        <rect key="frame" x="0.0" y="348" width="600" height="349"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9No-A4-2ve" id="787-Ds-Rgy">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="348.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvu-b1-U3p">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvu-b1-U3p">
                                                     <rect key="frame" x="77" y="8" width="146" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="0BM-H8-p4X"/>
+                                                        <constraint firstAttribute="width" constant="146" id="JuM-r1-oWU"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                                     <state key="normal" title="Reoccuring Schedule"/>
                                                 </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Nvu-b1-U3p" firstAttribute="top" secondItem="787-Ds-Rgy" secondAttribute="topMargin" id="Icj-pr-Jay"/>
+                                                <constraint firstItem="Nvu-b1-U3p" firstAttribute="leading" secondItem="787-Ds-Rgy" secondAttribute="leadingMargin" constant="69" id="teE-6M-aUa"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>

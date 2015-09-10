@@ -30,16 +30,20 @@
 
 - (IBAction)datePicker:(id)sender {
     
-    NSDate *date = [NSDate date];
+    NSDate *date = self.datePicker.date;
     
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateFormat:@"yyyy-MM-dd, hh:mm"];
+    [dateFormat setDateFormat:@"dd/MM/yyyy, hh:mm a"];
     NSString *dateString = [dateFormat stringFromDate:date];
     
-    PFObject *addValues= [PFObject objectWithClassName:@"Appointments"];
-    [addValues setObject: dateString forKey:@"myDateKey"];
-    [addValues saveInBackground];
+    self.datePickerLabel.text = dateString;
     
+    
+//    PFObject *addValues= [PFObject objectWithClassName:@"Appointments"];
+//    [addValues setObject: dateString forKey:@"myDateKey"];
+//    [addValues saveInBackground];
+   
+   
 
 }
 - (IBAction)saveAppointmentButton:(id)sender {
@@ -64,7 +68,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
-        return 3;
+        return 4;
     }else
     return 1;
 }
