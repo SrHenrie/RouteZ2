@@ -134,24 +134,6 @@
             </objects>
             <point key="canvasLocation" x="-2949" y="3230"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="yuh-CQ-omP">
-            <objects>
-                <viewController id="dGA-us-Wh3" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fdJ-Hb-WEm"/>
-                        <viewControllerLayoutGuide type="bottom" id="QhB-u6-TO3"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dHF-L9-zmd">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PwT-C1-ej6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2949" y="3904"/>
-        </scene>
         <!--Customer-->
         <scene sceneID="t88-Fm-5nF">
             <objects>
@@ -216,7 +198,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="All Customers" id="Sui-ks-yeA">
                         <rightBarButtonItems>
-                            <barButtonItem style="plain" id="73Z-2h-hRf">
+                            <barButtonItem id="73Z-2h-hRf">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="qtd-7u-qZY">
                                     <rect key="frame" x="558" y="11" width="22" height="22"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -936,7 +918,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Customer" id="pfE-EZ-mJE">
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="save" id="9rp-Um-HBb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="9rp-Um-HBb">
                             <connections>
                                 <action selector="saveButton:" destination="MCJ-VJ-vuV" id="6GR-3x-bS0"/>
                             </connections>
