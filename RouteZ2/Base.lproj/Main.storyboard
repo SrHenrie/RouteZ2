@@ -56,7 +56,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="FQr-Sp-54Q">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="FQr-Sp-54Q">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1247,7 +1247,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="76"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Appointment Notes:" translatesAutoresizingMaskIntoConstraints="NO" id="tAZ-OP-hJV">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Appointment Notes:" translatesAutoresizingMaskIntoConstraints="NO" id="tAZ-OP-hJV">
                                                     <rect key="frame" x="0.0" y="0.0" width="592" height="44"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
@@ -1255,10 +1255,10 @@
                                                 </textView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="tAZ-OP-hJV" firstAttribute="centerY" secondItem="5TN-2B-Jeh" secondAttribute="centerY" id="73o-Ah-SIr"/>
-                                                <constraint firstItem="tAZ-OP-hJV" firstAttribute="trailing" secondItem="5TN-2B-Jeh" secondAttribute="trailingMargin" id="C4Y-wo-5aM"/>
-                                                <constraint firstItem="tAZ-OP-hJV" firstAttribute="top" secondItem="5TN-2B-Jeh" secondAttribute="top" id="mnN-ph-dQU"/>
-                                                <constraint firstItem="tAZ-OP-hJV" firstAttribute="leading" secondItem="5TN-2B-Jeh" secondAttribute="leading" id="q8g-B9-0lb"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="tAZ-OP-hJV" secondAttribute="bottom" constant="23.5" id="4Bv-7g-ekU"/>
+                                                <constraint firstItem="tAZ-OP-hJV" firstAttribute="trailing" secondItem="5TN-2B-Jeh" secondAttribute="trailingMargin" id="EE0-yK-StB"/>
+                                                <constraint firstItem="tAZ-OP-hJV" firstAttribute="top" secondItem="5TN-2B-Jeh" secondAttribute="top" id="NaF-Qd-Ia1"/>
+                                                <constraint firstItem="tAZ-OP-hJV" firstAttribute="leading" secondItem="5TN-2B-Jeh" secondAttribute="leading" id="WgZ-JE-vW0"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
