@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Appointments.h"
+#import "Customer.h"
 
 @interface AppointmentController : NSObject
 
@@ -21,7 +22,7 @@
 
 - (void)resetAllAppointmentsFromParse:(void (^)(NSError *error))completion;
 
-- (void)addAppointments:(NSDate *)date text:(NSString *)time text:(NSString *)appointmentNotes;
+- (void)addAppointments:(NSDate *)date text:(NSString *)appointmentNotes customer:(Customer *)customer;
 
 - (void)removeAppointments:(Appointments *)appointments;
 

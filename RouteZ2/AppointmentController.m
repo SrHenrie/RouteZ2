@@ -45,17 +45,18 @@
       self.appointments = [query findObjects];
 }
 
-- (void)addAppointments:(NSDate *)date text:(NSString *)time text:(NSString *)appointmentNotes{
+- (void)addAppointments:(NSDate *)date text:(NSString *)appointmentNotes customer:(Customer *)customer{
     
     Appointments *appointments = [Appointments object];
     
     appointments.date = date;
-    appointments.time = time;
     appointments.appointmentNotes = appointmentNotes;
+    appointments.customer = customer;
     
     NSMutableArray *mutableAppointments = [NSMutableArray arrayWithArray:self.appointments];
     [mutableAppointments insertObject:appointments atIndex:0];
     self.appointments = mutableAppointments;
+    
     
     [appointments saveEventually];
 }

@@ -14,7 +14,7 @@
 
 @interface AddAppointmentTableViewController : UITableViewController <UITextViewDelegate>
 
-@property(strong, nonatomic) Customer *customer;
+@property (strong, nonatomic) Customer *customer;
 @property (strong, nonatomic) Appointments *appointments;
 @property (weak, nonatomic) IBOutlet UILabel *customerNameLabel;
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;

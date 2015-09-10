@@ -8,10 +8,11 @@
 
 #import "PFObject.h"
 #import <Parse/Parse.h>
+#import "Customer.h"
 
 @interface Appointments : PFObject <PFSubclassing>
 
-@property (nonatomic, retain) NSString *customer;
+@property (nonatomic, retain) Customer *customer;
 @property (nonatomic, retain) NSDate *date;
 @property (nonatomic, strong) NSString *time;
 @property (nonatomic, strong) NSString *appointmentNotes;

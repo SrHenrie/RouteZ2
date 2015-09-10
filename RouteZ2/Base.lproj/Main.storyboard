@@ -40,7 +40,6 @@
             <string>Avenir-Book</string>
             <string>Avenir-Book</string>
             <string>Avenir-Book</string>
-            <string>Avenir-Book</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -1210,7 +1209,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--/--/---- , --:--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDJ-Pt-Yqo">
                                                     <rect key="frame" x="8" y="11" width="584" height="21"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1222,52 +1221,27 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="76" id="voc-Nj-axV">
-                                        <rect key="frame" x="0.0" y="272" width="600" height="76"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="302" id="voc-Nj-axV">
+                                        <rect key="frame" x="0.0" y="272" width="600" height="302"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="voc-Nj-axV" id="5TN-2B-Jeh">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="76"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="302"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Appointment Notes:" translatesAutoresizingMaskIntoConstraints="NO" id="tAZ-OP-hJV">
                                                     <rect key="frame" x="0.0" y="0.0" width="592" height="44"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="GoZ-BI-PeT"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="tAZ-OP-hJV" secondAttribute="bottom" constant="23.5" id="4Bv-7g-ekU"/>
-                                                <constraint firstItem="tAZ-OP-hJV" firstAttribute="trailing" secondItem="5TN-2B-Jeh" secondAttribute="trailingMargin" id="EE0-yK-StB"/>
-                                                <constraint firstItem="tAZ-OP-hJV" firstAttribute="top" secondItem="5TN-2B-Jeh" secondAttribute="top" id="NaF-Qd-Ia1"/>
-                                                <constraint firstItem="tAZ-OP-hJV" firstAttribute="leading" secondItem="5TN-2B-Jeh" secondAttribute="leading" id="WgZ-JE-vW0"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection id="czM-3G-Fzd">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="349" id="9No-A4-2ve">
-                                        <rect key="frame" x="0.0" y="348" width="600" height="349"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9No-A4-2ve" id="787-Ds-Rgy">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="348.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvu-b1-U3p">
-                                                    <rect key="frame" x="77" y="8" width="146" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="0BM-H8-p4X"/>
-                                                        <constraint firstAttribute="width" constant="146" id="JuM-r1-oWU"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
-                                                    <state key="normal" title="Reoccuring Schedule"/>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Nvu-b1-U3p" firstAttribute="top" secondItem="787-Ds-Rgy" secondAttribute="topMargin" id="Icj-pr-Jay"/>
-                                                <constraint firstItem="Nvu-b1-U3p" firstAttribute="leading" secondItem="787-Ds-Rgy" secondAttribute="leadingMargin" constant="69" id="teE-6M-aUa"/>
+                                                <constraint firstItem="tAZ-OP-hJV" firstAttribute="leading" secondItem="5TN-2B-Jeh" secondAttribute="leading" id="HtF-uE-tcO"/>
+                                                <constraint firstItem="tAZ-OP-hJV" firstAttribute="top" secondItem="5TN-2B-Jeh" secondAttribute="top" id="OTE-sx-vAD"/>
+                                                <constraint firstItem="tAZ-OP-hJV" firstAttribute="trailing" secondItem="5TN-2B-Jeh" secondAttribute="trailingMargin" id="zqX-bz-YpT"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1283,17 +1257,16 @@
                     <navigationItem key="navigationItem" id="POc-z9-x1O">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="YqJ-te-bAh">
                             <connections>
-                                <action selector="saveAppointmentButton:" destination="zuU-LY-1qi" id="XO3-tH-li7"/>
+                                <action selector="saveAppointmentButton:" destination="zuU-LY-1qi" id="Ww1-yl-ot0"/>
+                                <segue destination="3NT-9n-a3H" kind="show" id="1ay-SN-Hb3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="appointmentNotesTextView" destination="tAZ-OP-hJV" id="uFM-To-s4d"/>
                         <outlet property="customerNameLabel" destination="Qsh-0F-Wou" id="ZjP-3s-SmI"/>
-                        <outlet property="datePicker" destination="4Kt-cZ-MGU" id="XZA-wG-eRD"/>
+                        <outlet property="datePicker" destination="4Kt-cZ-MGU" id="t9W-yR-nq2"/>
                         <outlet property="datePickerLabel" destination="IDJ-Pt-Yqo" id="oww-jP-R6d"/>
-                        <outlet property="reoccuringAppointmentButton" destination="Nvu-b1-U3p" id="bRj-p8-bw6"/>
-                        <outlet property="saveAppointmentButton" destination="YqJ-te-bAh" id="rid-VP-lTQ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NfG-mT-1I6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1454,4 +1427,7 @@
             <point key="canvasLocation" x="-2181" y="2657.9999999999995"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="1ay-SN-Hb3"/>
+    </inferredMetricsTieBreakers>
 </document>

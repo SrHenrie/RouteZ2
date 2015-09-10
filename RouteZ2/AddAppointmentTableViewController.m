@@ -12,10 +12,9 @@
 #import "CustomerProfileTableViewController.h"
 #import "AppointmentController.h"
 #import "Appointments.h"
+#import "ViewHistoryViewController.h"
 
 @interface AddAppointmentTableViewController ()
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveAppointmentButton;
-
 
 @end
 
@@ -33,26 +32,21 @@
     NSDate *date = self.datePicker.date;
     
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateFormat:@"dd/MM/yyyy, hh:mm a"];
+    [dateFormat setDateFormat:@"MM/dd/yyyy, hh:mm a"];
     NSString *dateString = [dateFormat stringFromDate:date];
     
     self.datePickerLabel.text = dateString;
-    
-    
-//    PFObject *addValues= [PFObject objectWithClassName:@"Appointments"];
-//    [addValues setObject: dateString forKey:@"myDateKey"];
-//    [addValues saveInBackground];
-   
-   
-
 }
+
 - (IBAction)saveAppointmentButton:(id)sender {
-        
+    
+    [[AppointmentController sharedInstance] addAppointments:self.datePicker.date text:self.appointmentNotesTextView.text customer:self.customer];
+    
 }
 
 - (void)updateWithCustomer: (Customer *)customer {
     
-    self.customerNameLabel.text = self.customerNameLabel.text = [NSString stringWithFormat:@"%@ %@", customer.firstName, customer.lastName];
+   self.customerNameLabel.text = [NSString stringWithFormat:@"%@ %@", customer.firstName, customer.lastName];
    
     
 }
@@ -63,14 +57,14 @@
 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
         return 4;
     }else
-    return 1;
+    return 0;
 }
 //- (IBAction)saveDateButton:(UIButton *)sender {
 //    
@@ -131,15 +125,20 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+    if ([segue.identifier isEqualToString:@"appointmentList"]){
+        
+        ViewHistoryViewController *addAppointment = [segue destinationViewController];
+        addAppointment.appointments = self.appointments;
+        
+        
+    }
 }
-*/
+
 
 
 

@@ -8,7 +8,7 @@
 
 #import "Appointments.h"
 
-static NSString * const AppointmentClassName = @"Appointment";
+static NSString * const AppointmentClassName = @"Appointments";
 
 @implementation Appointments
 
