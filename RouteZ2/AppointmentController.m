@@ -16,7 +16,8 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [[AppointmentController alloc] init];
-        [sharedInstance loadAppointmentsFromParse: nil];
+//        [sharedInstance loadAppointmentsFromParse: nil];
+        [sharedInstance updateAppointmentsFromParseLocalDatastore];
     });
     return sharedInstance;
 }
@@ -42,6 +43,7 @@
 - (void)updateAppointmentsFromParseLocalDatastore {
     PFQuery *query = [Appointments query];
     [query fromLocalDatastore];
+    [query orderByAscending:@"date"];
       self.appointments = [query findObjects];
 }
 
