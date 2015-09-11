@@ -19,5 +19,13 @@
 
     // Configure the view for the selected state
 }
+- (void) updateWithAppointment:(Appointments *)appointments{
+    
+    self.appointments = appointments;
+    
+
+
+}
+
 
 @end

@@ -14,7 +14,6 @@
 
 @property (nonatomic, retain) Customer *customer;
 @property (nonatomic, retain) NSDate *date;
-@property (nonatomic, strong) NSString *time;
 @property (nonatomic, strong) NSString *appointmentNotes;
 
 + (NSString *) parseClassName;

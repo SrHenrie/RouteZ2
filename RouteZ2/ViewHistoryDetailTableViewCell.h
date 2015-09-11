@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Appointments.h"
+#import "AppointmentController.h"
+#import "ViewHistoryViewController.h"
 
 @interface ViewHistoryDetailTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
-@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UITextView *appointmentNotesTextView;
+@property (nonatomic, strong) Appointments *appointments;
 
-
+- (void) updateWithAppointment:(Appointments *)appointments;
 
 @end

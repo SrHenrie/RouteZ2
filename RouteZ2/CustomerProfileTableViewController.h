@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Parse/Parse.h>
+
 @class Customer;
 
 static NSString * const CustomerKey = @"customer";
@@ -18,4 +18,5 @@ static NSString * const CustomerKey = @"customer";
 
 - (void)updateWithCustomer: (Customer *)customer;
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 @end

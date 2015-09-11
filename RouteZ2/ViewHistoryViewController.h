@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "AppointmentController.h"
 #import "Appointments.h"
-#import "AddAppointmentTableViewController.h"
+#import "ViewHistoryDetailTableViewCell.h"
+#import "ViewHistoryDataSource.h"
+
 
 @interface ViewHistoryViewController : UIViewController
 

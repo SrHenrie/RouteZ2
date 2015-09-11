@@ -8,7 +8,7 @@
 
 #import "CustomerTableViewCell.h"
 #import "CustomerController.h"
-#import <Parse/Parse.h>
+
 
 
 @implementation CustomerTableViewCell

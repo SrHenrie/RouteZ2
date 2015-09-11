@@ -14,7 +14,6 @@ static NSString * const AppointmentClassName = @"Appointments";
 
 @dynamic customer;
 @dynamic date;
-@dynamic time;
 @dynamic appointmentNotes;
 
 + (NSString *) parseClassName{

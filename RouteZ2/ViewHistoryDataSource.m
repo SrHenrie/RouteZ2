@@ -16,14 +16,25 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 1;
-//        return [AppointmentController sharedInstance].appointments.count;
+
+        return [AppointmentController sharedInstance].appointments.count;
     }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     ViewHistoryDetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"appointmentsCell"];
-        return cell;
+    
+    
+    Appointments *appointments = [AppointmentController sharedInstance].appointments[indexPath.row];
+    
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"MM/dd/yyyy, hh:mm a"];
+    NSString *dateString = [dateFormat stringFromDate:appointments.date];
+    
+    cell.dateLabel.text = dateString;
+    cell.appointmentNotesTextView.text = appointments.appointmentNotes;
+    
+    return cell;
     
 }
 

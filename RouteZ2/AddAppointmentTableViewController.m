@@ -36,6 +36,8 @@
     NSString *dateString = [dateFormat stringFromDate:date];
     
     self.datePickerLabel.text = dateString;
+    
+    
 }
 
 - (IBAction)saveAppointmentButton:(id)sender {
