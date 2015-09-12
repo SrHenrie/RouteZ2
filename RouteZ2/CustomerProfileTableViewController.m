@@ -7,12 +7,7 @@
 //
 
 #import "CustomerProfileTableViewController.h"
-#import "Customer.h"
-#import "CustomerController.h"
-#import "AddAppointmentTableViewController.h"
-#import "ViewHistoryViewController.h"
-#import "Appointments.h"
-#import "AppointmentController.h"
+
 
 @interface CustomerProfileTableViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
@@ -123,6 +118,11 @@
 
 - (IBAction)deleteCustomerButton:(id)sender{
     
+    [[CustomerController sharedInstance]removeCustomer:self.customer];
+    
+//    [[AppointmentController sharedInstance]removeAppointments:self.appointments];
+    
+    [self.navigationController popViewControllerAnimated:YES];
 
     }
     

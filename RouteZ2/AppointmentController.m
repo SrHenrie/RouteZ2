@@ -16,7 +16,6 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [[AppointmentController alloc] init];
-//        [sharedInstance loadAppointmentsFromParse: nil];
         [sharedInstance updateAppointmentsFromParseLocalDatastore];
     });
     return sharedInstance;

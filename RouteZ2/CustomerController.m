@@ -84,6 +84,8 @@
             self.customers = mutableCustomers;
         }
         
+        
+        
         [customer unpinInBackground];
         [customer deleteInBackground];
     }

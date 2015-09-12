@@ -7,12 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Customer.h"
+#import "CustomerController.h"
+#import "AddAppointmentTableViewController.h"
+#import "ViewHistoryViewController.h"
+#import "Appointments.h"
+#import "AppointmentController.h"
 @class Customer;
 
 static NSString * const CustomerKey = @"customer";
 
 @interface CustomerProfileTableViewController : UITableViewController
+
+//@property (strong, nonatomic) Appointments *appointments;
 
 @property(strong, nonatomic) Customer *customer;
 
