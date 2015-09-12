@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "Customer.h"
+#import "AppointmentController.h"
+#import "Appointments.h"
 
 @interface CustomerController : NSObject
 

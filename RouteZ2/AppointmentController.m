@@ -16,13 +16,17 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [[AppointmentController alloc] init];
+        [sharedInstance loadAppointmentsFromParse:nil];
         [sharedInstance updateAppointmentsFromParseLocalDatastore];
     });
     return sharedInstance;
 }
+
 -(void) loadAppointmentsFromParse:(void (^)(NSError *error))completion{
     
     PFQuery *query = [Appointments query];
+    
+    [query includeKey:@"customer"];
     
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         for (Appointments *appointments in objects) {

@@ -12,7 +12,6 @@ static NSString * const AppointmentClassName = @"Appointments";
 
 @implementation Appointments
 
-@dynamic customer;
 @dynamic date;
 @dynamic appointmentNotes;
 

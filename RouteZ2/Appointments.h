@@ -12,7 +12,6 @@
 
 @interface Appointments : PFObject <PFSubclassing>
 
-@property (nonatomic, retain) Customer *customer;
 @property (nonatomic, retain) NSDate *date;
 @property (nonatomic, strong) NSString *appointmentNotes;
 

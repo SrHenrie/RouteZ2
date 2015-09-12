@@ -76,7 +76,8 @@
         [customer saveEventually];
     
 }
-    - (void)removeCustomer:(Customer *)customer {
+
+- (void)removeCustomer:(Customer *)customer {
         
         NSMutableArray *mutableCustomers = [NSMutableArray arrayWithArray:self.customers];
         if ([mutableCustomers containsObject:customer]) {
@@ -84,6 +85,22 @@
             self.customers = mutableCustomers;
         }
         
+        NSArray *array = [AppointmentController sharedInstance].appointments;
+        
+        for (Appointments *appointment in array) {
+            
+            if (appointment.customer.firstName == customer.firstName) {
+                [[AppointmentController sharedInstance]removeAppointments:appointment];
+            }
+            
+            
+        }
+    
+        
+        // Get the array of appointments for this customer
+        // Use a for-in loop to go through each appointment in the array
+        // Call the removeAppointment method on your AppointmentController to delete the appointment.
+        // Good luck.
         
         
         [customer unpinInBackground];
